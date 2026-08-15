@@ -4,7 +4,7 @@
 jQuery(function () {
   'use strict';
 
-  document.addEventListener("touchstart", function () {}, false);
+  document.addEventListener("touchstart", function () { }, false);
   jQuery(function () {
 
     jQuery('body').wrapInner('<div class="wsmenucontainer" />');
