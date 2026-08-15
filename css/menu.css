@@ -1,5 +1,3 @@
-
-
 /*
  * Plugin: Web Slide Navigation System
  * Demo Link: https://uxwing.com/webslide/
@@ -73,7 +71,7 @@ video {
 .wsmainfull {
   width: 100%;
   height: auto;
-  background-color: #fff!important;
+  background-color: #fff !important;
   z-index: 999;
   -webkit-box-shadow: 0 2px 3px rgba(96, 96, 96, .1);
   -moz-box-shadow: 0 2px 3px rgba(96, 96, 96, .1);
@@ -82,7 +80,7 @@ video {
   -moz-transition: all 450ms ease-in-out;
   -o-transition: all 450ms ease-in-out;
   -ms-transition: all 450ms ease-in-out;
-  transition: all 450ms ease-in-out; 
+  transition: all 450ms ease-in-out;
 }
 
 .wsmainwp {
@@ -119,7 +117,7 @@ video {
   margin-left: auto;
 }
 
-.wsmenu > a {
+.wsmenu>a {
   display: inline-flex;
   align-items: center;
   color: #2c3e50;
@@ -136,12 +134,12 @@ video {
   transition: all 0.3s ease-in-out;
 }
 
-.wsmenu > a:hover,
-.wsmenu > a.active {
+.wsmenu>a:hover,
+.wsmenu>a.active {
   color: #ff4500 !important;
 }
 
-.wsmenu > a::after {
+.wsmenu>a::after {
   content: '';
   position: absolute;
   bottom: 16px;
@@ -155,17 +153,17 @@ video {
   transition: all 0.3s ease-in-out;
 }
 
-.wsmenu > a:hover::after,
-.wsmenu > a.active::after {
+.wsmenu>a:hover::after,
+.wsmenu>a.active::after {
   opacity: 1;
   transform: scaleX(1);
 }
 
-.wsmenu > a.header-btn::after {
+.wsmenu>a.header-btn::after {
   display: none !important;
 }
 
-.wsmenu > a.header-btn {
+.wsmenu>a.header-btn {
   height: auto !important;
   line-height: 1 !important;
   margin-left: 8px !important;
@@ -179,54 +177,54 @@ video {
   transition: all 0.3s ease !important;
 }
 
-.wsmenu > a.header-btn:hover {
+.wsmenu>a.header-btn:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 20px rgba(255, 69, 0, 0.35) !important;
   color: #ffffff !important;
 }
 
-.wsmenu > .wsmenu-list > li > a.callusbtn {
+.wsmenu>.wsmenu-list>li>a.callusbtn {
   font-size: 15px;
 }
 
-.wsmenu > .wsmenu-list > li > a.callusbtn i {
+.wsmenu>.wsmenu-list>li>a.callusbtn i {
   font-size: 13px;
   margin-top: 1px;
   margin-right: 1px;
 }
 
-.tra-menu .wsmenu > .wsmenu-list > li > a,
-.aqua-menu .wsmenu > .wsmenu-list > li > a,
-.blue-menu .wsmenu > .wsmenu-list > li > a {
+.tra-menu .wsmenu>.wsmenu-list>li>a,
+.aqua-menu .wsmenu>.wsmenu-list>li>a,
+.blue-menu .wsmenu>.wsmenu-list>li>a {
   color: #fff;
 }
 
-.white-menu .wsmenu > .wsmenu-list > li > a {
+.white-menu .wsmenu>.wsmenu-list>li>a {
   color: #666;
 }
 
-.tra-menu .wsmenu.dark-txt > .wsmenu-list > li > a {
+.tra-menu .wsmenu.dark-txt>.wsmenu-list>li>a {
   color: #333;
 }
 
-.wsmenu > .wsmenu-list > li:last-child > a {
+.wsmenu>.wsmenu-list>li:last-child>a {
   border-right: 0px;
 }
 
-.wsmenu > .wsmenu-list > li:hover > a {
+.wsmenu>.wsmenu-list>li:hover>a {
   color: #f0f0f0;
 }
 
-.white-menu .wsmenu > .wsmenu-list > li:hover > a {
+.white-menu .wsmenu>.wsmenu-list>li:hover>a {
   color: #ff4500;
 }
 
-.wsmenu > .wsmenu-list > li a.menuhomeicon {
+.wsmenu>.wsmenu-list>li a.menuhomeicon {
   padding-left: 29px;
   padding-right: 29px;
 }
 
-.wsmenu > .wsmenu-list > li > a i {
+.wsmenu>.wsmenu-list>li>a i {
   display: inline-block;
   font-size: 16px;
   line-height: inherit;
@@ -234,12 +232,12 @@ video {
   vertical-align: top;
 }
 
-.wsmenu > .wsmenu-list > li > a.menuhomeicon i {
+.wsmenu>.wsmenu-list>li>a.menuhomeicon i {
   margin-right: 0px;
   font-size: 15px;
 }
 
-.wsmenu > .wsmenu-list > li > a .wsarrow:after {
+.wsmenu>.wsmenu-list>li>a .wsarrow:after {
   border-left: 4px solid rgba(0, 0, 0, 0);
   border-right: 4px solid rgba(0, 0, 0, 0);
   border-top: 4px solid;
@@ -255,34 +253,34 @@ video {
 }
 
 /* Desktop Search Bar */
-.wsmenu > .wsmenu-list > li.rightmenu {
+.wsmenu>.wsmenu-list>li.rightmenu {
   float: right;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu a {
+.wsmenu>.wsmenu-list>li.rightmenu a {
   padding: 0px 30px 0px 20px;
   border-right: none;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu a i {
+.wsmenu>.wsmenu-list>li.rightmenu a i {
   font-size: 15px;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu {
+.wsmenu>.wsmenu-list>li.rightmenu {
   float: right;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu:before,
-.wsmenu-list > li.rightmenu:after {
+.wsmenu>.wsmenu-list>li.rightmenu:before,
+.wsmenu-list>li.rightmenu:after {
   content: "";
   display: table;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu:after {
+.wsmenu>.wsmenu-list>li.rightmenu:after {
   clear: both;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch {
   float: right;
   width: 210px;
   height: 39px;
@@ -290,14 +288,14 @@ video {
   margin: 16px 0px 0px 0px;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch .searchicon {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .searchicon {
   -webkit-transition: all 0.7s ease 0s;
   -moz-transition: all 0.7s ease 0s;
   -o-transition: all 0.7s ease 0s;
   transition: all 0.7s ease 0s;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch input {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input {
   width: 100%;
   position: relative;
   float: right;
@@ -321,27 +319,27 @@ video {
   font-size: 12px;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch input::placeholder {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input::placeholder {
   color: #a9a9a9;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch input:focus {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus {
   color: #333;
   width: 220px;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch input:focus~.btnstyle i {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus~.btnstyle i {
   color: #000;
   opacity: 1;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch input:focus~.searchicon {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus~.searchicon {
   opacity: 1;
   z-index: 3;
   color: #FFFFFF;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch .btnstyle {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .btnstyle {
   top: 0px;
   position: absolute;
   right: 0;
@@ -361,18 +359,18 @@ video {
   transition: all 0.7s ease 0s;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch .btnstyle i {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .btnstyle i {
   line-height: 37px;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu > .topmenusearch .btnstyle:hover i {
+.wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch .btnstyle:hover i {
   opacity: 1;
 }
 
-.wsmenu > .wsmenu-list > li.rightmenu {
+.wsmenu>.wsmenu-list>li.rightmenu {
   zoom: 1;
 }
 
@@ -380,7 +378,7 @@ video {
 /*  Desktop Drop Down Menu CSS
 --------------------------------------------*/
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu {
+.wsmenu>.wsmenu-list>li>ul.sub-menu {
   position: absolute;
   top: 70px;
   z-index: 1000;
@@ -399,12 +397,12 @@ video {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.wsmenu > .wsmenu-list > li:hover > ul.sub-menu {
+.wsmenu>.wsmenu-list>li:hover>ul.sub-menu {
   opacity: 1;
   visibility: visible;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li {
   position: relative;
   margin: 0px;
   padding: 0px;
@@ -412,13 +410,13 @@ video {
   border-bottom: 1px dashed #c0c0c0;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li:last-child {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li:last-child {
   border-bottom: none;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > a {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a {
   position: relative;
-  background-image: none;  
+  background-image: none;
   border-right: 0 none;
   text-align: left;
   display: block;
@@ -426,14 +424,14 @@ video {
   text-transform: none;
   color: #888;
   font-size: 16px;
-  font-family: 'Oxygen', sans-serif; 
+  font-family: 'Oxygen', sans-serif;
   line-height: 22px;
   font-weight: 400;
   letter-spacing: 0;
   border-right: 0px solid;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px; 
+  border-radius: 4px;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
@@ -441,17 +439,17 @@ video {
   transition: all 400ms ease-in-out;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > a:hover {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a:hover {
   padding: 9px 9px 9px 20px;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > a > i {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>a>i {
   position: absolute;
   top: 12px;
   right: 0;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu {
   min-width: 200px;
   position: absolute;
   left: 100%;
@@ -471,12 +469,12 @@ video {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li:hover > ul.sub-menu {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li:hover>ul.sub-menu {
   opacity: 1;
   visibility: visible;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li {
   position: relative;
   margin: 0px;
   padding: 0px;
@@ -484,11 +482,11 @@ video {
   border-bottom: 1px dashed #c0c0c0;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li:last-child {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li:last-child {
   border-bottom: none;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
   position: relative;
   background-image: none;
   border-right: 0 none;
@@ -498,7 +496,7 @@ video {
   text-transform: none;
   color: #888;
   font-size: 16px;
-  font-family: 'Oxygen', sans-serif; 
+  font-family: 'Oxygen', sans-serif;
   line-height: 22px;
   font-weight: 400;
   letter-spacing: normal;
@@ -510,17 +508,17 @@ video {
   transition: all 400ms ease-in-out;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a:hover {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
   padding: 8px 15px 8px 23px;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a > i {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>i {
   position: absolute;
   top: 12px;
   right: 12px;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
   min-width: 200px;
   position: absolute;
   left: 100%;
@@ -535,14 +533,14 @@ video {
   border-radius: 4px;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
   position: relative;
   margin: 0px;
   padding: 0px;
   display: block;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
   background-image: none;
   border-right: 0 none;
   text-align: left;
@@ -551,7 +549,7 @@ video {
   text-transform: none;
   color: #888;
   font-size: 16px;
-  font-family: 'Oxygen', sans-serif; 
+  font-family: 'Oxygen', sans-serif;
   line-height: 22px;
   font-weight: 400;
   letter-spacing: normal;
@@ -563,11 +561,11 @@ video {
   transition: all 400ms ease-in-out;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a:hover {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
   padding: 9px 9px 9px 20px;
 }
 
-.wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a > i {
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>i {
   margin-left: 9px;
 }
 
@@ -575,7 +573,7 @@ video {
 /*  Desktop Mega Menus CSS
 --------------------------------------------*/
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu {
+.wsmenu>.wsmenu-list>li>.wsmegamenu {
   width: 100%;
   left: 0px;
   position: absolute;
@@ -597,16 +595,16 @@ video {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.wsmenu > .wsmenu-list > li:hover > .wsmegamenu {
+.wsmenu>.wsmenu-list>li:hover>.wsmegamenu {
   opacity: 1;
   visibility: visible;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu {
+.wsmenu>.wsmenu-list>li>.wsmegamenu.halfmenu {
   padding: 20px 20px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .title {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .title {
   padding: 9px 5px 9px 0px;
   color: #222;
   font-weight: 700;
@@ -631,15 +629,15 @@ video {
   text-decoration: underline;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .carousel-control-next {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-control-next {
   opacity: 0.8;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .carousel-control-prev {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-control-prev {
   opacity: 0.8;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .carousel-caption {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-caption {
   bottom: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 13px;
@@ -650,7 +648,7 @@ video {
   width: 100%;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .wsmwnutxt {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .wsmwnutxt {
   width: 100%;
   color: #888;
   font-size: 16px;
@@ -660,7 +658,7 @@ video {
   margin-top: 0;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .link-list li {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li {
   display: block;
   text-align: center;
   white-space: nowrap;
@@ -668,12 +666,12 @@ video {
   border-bottom: 1px dashed #c0c0c0;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .link-list li.title,
-.wsmenu > .wsmenu-list > li > .wsmegamenu .link-list li:last-child {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li.title,
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li:last-child {
   border-bottom: none;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .link-list li a {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li a {
   line-height: 18px;
   border-right: none;
   text-align: left;
@@ -685,7 +683,7 @@ video {
   background-color: #fff;
   color: #888;
   font-size: 16px;
-  font-family: 'Oxygen', sans-serif; 
+  font-family: 'Oxygen', sans-serif;
   font-weight: 400;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -694,15 +692,15 @@ video {
   transition: all 400ms ease-in-out;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .link-list li a:hover {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li a:hover {
   padding: 15px 0 15px 10px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .mrgtop {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .mrgtop {
   margin-top: 15px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .show-grid div {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .show-grid div {
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: #dbdbdb;
@@ -713,25 +711,25 @@ video {
 }
 
 /*= Desktop Half Menu CSS =*/
-.wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu {
+.wsmenu>.wsmenu-list>li>.wsmegamenu.halfmenu {
   width: 40%;
   right: auto;
   left: auto;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu.halfdiv {
+.wsmenu>.wsmenu-list>li>.wsmegamenu.halfdiv {
   width: 35%;
   right: auto;
   left: auto;
 }
 
 /*= Desktop HTML Form Menu CSS =*/
-.wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form {
   width: 100%;
   display: block;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form input[type="text"] {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type="text"] {
   width: 100%;
   border: 1px solid #e2e2e2;
   color: #000;
@@ -740,7 +738,7 @@ video {
   margin-bottom: 8px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form textarea {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form textarea {
   width: 100%;
   border: 1px solid #e2e2e2;
   color: #000;
@@ -750,7 +748,7 @@ video {
   min-height: 122px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form input[type="submit"] {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type="submit"] {
   width: 25%;
   display: block;
   height: 32px;
@@ -764,7 +762,7 @@ video {
   border-radius: 2px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form input[type="button"] {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type="button"] {
   width: 25%;
   display: block;
   height: 32px;
@@ -777,11 +775,11 @@ video {
   border-radius: 2px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .carousel-inner .item img {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-inner .item img {
   width: 100%;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .carousel-caption {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .carousel-caption {
   bottom: 0px;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 13px;
@@ -792,29 +790,29 @@ video {
   width: 100%;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .typography-text {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text {
   padding: 0px 0px;
   font-size: 14px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .typography-text ul {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text ul {
   padding: 0px 0px;
   margin: 0px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .typography-text p {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text p {
   text-align: justify;
   line-height: 24px;
   color: #656565;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .typography-text ul li {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text ul li {
   display: block;
   padding: 2px 0px;
   line-height: 22px;
 }
 
-.wsmenu > .wsmenu-list > li > .wsmegamenu .typography-text ul li a {
+.wsmenu>.wsmenu-list>li>.wsmegamenu .typography-text ul li a {
   color: #656565;
 }
 
@@ -895,7 +893,7 @@ video {
     margin: 0px;
   }
 
-  .wsmenu > .wsmenu-list {
+  .wsmenu>.wsmenu-list {
     height: auto;
     min-height: 100%;
     width: 240px;
@@ -913,7 +911,7 @@ video {
     transition: all 0.25s ease-in-out;
   }
 
-  .wsmenu > .wsmenu-list > li {
+  .wsmenu>.wsmenu-list>li {
     width: 100%;
     display: block;
     float: none;
@@ -925,12 +923,12 @@ video {
   }
 
   @supports (-webkit-overflow-scrolling: touch) {
-    .wsmenu > .wsmenu-list > li:last-child {
+    .wsmenu>.wsmenu-list>li:last-child {
       padding-bottom: 110px;
     }
   }
 
-  .wsmenu > .wsmenu-list > li >a {
+  .wsmenu>.wsmenu-list>li>a {
     padding: 12px 32px 12px 17px;
     font-size: 15px;
     text-align: left;
@@ -943,37 +941,37 @@ video {
     position: static;
   }
 
-  .wsmenu > .wsmenu-list > li a.menuhomeicon {
+  .wsmenu>.wsmenu-list>li a.menuhomeicon {
     padding-left: 17px;
     padding-right: 17px;
     border-top: solid 1px rgba(0, 0, 0, 0.13);
   }
 
-  .wsmenu > .wsmenu-list > li >a.menuhomeicon i {
+  .wsmenu>.wsmenu-list>li>a.menuhomeicon i {
     margin-right: 2px;
     font-size: 13px;
   }
 
-  .wsmenu > .wsmenu-list > li > a >i {
+  .wsmenu>.wsmenu-list>li>a>i {
     font-size: 14px;
     color: #bfbfbf;
   }
 
-  .wsmenu > .wsmenu-list > li >a .wsarrow:after {
+  .wsmenu>.wsmenu-list>li>a .wsarrow:after {
     display: none;
   }
 
-  .wsmenu > .wsmenu-list > li:hover>a {
+  .wsmenu>.wsmenu-list>li:hover>a {
     background-color: rgba(0, 0, 0, 0.08);
     text-decoration: none;
   }
 
-  .wsmenu > .wsmenu-list > li > a > .hometext {
+  .wsmenu>.wsmenu-list>li>a>.hometext {
     display: inline-block;
   }
 
   /* ================== Mobile Slide Down Links CSS ================== */
-  .wsmenu > .wsmenu-list > li > ul.sub-menu {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu {
     display: none;
     position: relative;
     top: 0px;
@@ -993,33 +991,33 @@ video {
     -webkit-transform-style: flat;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li >a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a {
     line-height: 20px;
     font-size: 13px;
     padding: 10px 0px 10px 16px;
     color: #383838;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li span+a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li span+a {
     padding-right: 30px;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > a >i {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a>i {
     display: none;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li >a:hover {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a:hover {
     background-color: #e7e7e7;
     color: #666666;
     text-decoration: underline;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu li:hover>a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu li:hover>a {
     background-color: #e7e7e7;
     color: #666666;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu {
     width: 100%;
     position: static;
     left: 100%;
@@ -1042,42 +1040,42 @@ video {
     -webkit-transform-style: flat;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li {
     margin: 0px 0px 0px 0px;
     padding: 0px;
     position: relative;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li >a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
     line-height: 20px;
     font-size: 13px;
     padding: 10px 0px 10px 26px;
     color: #383838;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li span+a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li span+a {
     padding-right: 30px;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > a >i {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>i {
     display: none;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li >a:hover {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
     background-color: #e7e7e7;
     color: #666666;
     text-decoration: underline;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li >a.active {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
     color: #000;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li:hover>a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>a {
     color: #000;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
     width: 100%;
     position: static;
     left: 100%;
@@ -1100,37 +1098,37 @@ video {
     -webkit-transform-style: flat;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
     margin: 0px 0px 0px 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li >a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
     line-height: 20px;
     font-size: 13px;
     padding: 10px 0px 10px 34px;
     color: #383838;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li span+a {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li span+a {
     padding-right: 30px;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li > a >i {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>i {
     display: none;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li >a:hover {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
     background-color: #e7e7e7;
     color: #666666;
     text-decoration: underline;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu > li >a.active {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
     color: #000;
   }
 
   /* ================== Mobile Mega Menus CSS  ================== */
-  .wsmenu > .wsmenu-list > li > .wsmegamenu {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu {
     color: #666666;
     display: none;
     position: relative;
@@ -1152,26 +1150,26 @@ video {
     -webkit-transform-style: flat;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu.halfmenu {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu.halfmenu {
     width: 100%;
     margin: 0px;
     padding: 5px 0px 10px 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu .title {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .title {
     color: #666666;
     font-size: 15px;
     padding: 10px 8px 10px 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu> ul {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu>ul {
     width: 100%;
     margin: 0px;
     padding: 0px;
     font-size: 15px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu> ul> li >a {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu>ul>li>a {
     padding: 9px 14px;
     line-height: normal;
     font-size: 13px;
@@ -1179,11 +1177,11 @@ video {
     color: #666666;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu> ul> li >a:hover {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu>ul>li>a:hover {
     background-color: #000000;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu ul li.title {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu ul li.title {
     line-height: 26px;
     color: #666666;
     margin: 0px;
@@ -1192,27 +1190,27 @@ video {
     background-color: transparent;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu.halfdiv {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu.halfdiv {
     width: 100%;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form {
     padding: 5px 0px 62px 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu .show-grid div {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .show-grid div {
     margin: 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form input[type="button"] {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type="button"] {
     width: 46%;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form input[type="submit"] {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form input[type="submit"] {
     width: 46%;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmegamenu .menu_form textarea {
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .menu_form textarea {
     min-height: 100px;
   }
 
@@ -1251,17 +1249,17 @@ video {
   }
 
   /* Mobile Search Bar*/
-  .wsmenu > .wsmenu-list > li.rightmenu> .topmenusearch {
+  .wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch {
     width: 86%;
     margin: 7% 7%;
     padding: 0px;
   }
 
-  .wsmenu > .wsmenu-list > li.rightmenu> .topmenusearch input {
+  .wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input {
     border-radius: 50px
   }
 
-  .wsmenu > .wsmenu-list > li.rightmenu> .topmenusearch input:focus {
+  .wsmenu>.wsmenu-list>li.rightmenu>.topmenusearch input:focus {
     width: 100%;
   }
 
@@ -1412,7 +1410,7 @@ video {
     top: 0;
   }
 
-  .wsactive .wsmenu > .wsmenu-list {
+  .wsactive .wsmenu>.wsmenu-list {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -1422,7 +1420,7 @@ video {
   }
 
   /* ================== Mobile Sub Menu Expander Arrows  ================== */
-  .wsmenu > .wsmenu-list > li > .wsmenu-click {
+  .wsmenu>.wsmenu-list>li>.wsmenu-click {
     height: 49px;
     position: absolute;
     top: 0;
@@ -1432,12 +1430,12 @@ video {
     width: 100%;
   }
 
-  .wsmenu > .wsmenu-list > li .wsmenu-click.ws-activearrow>i {
+  .wsmenu>.wsmenu-list>li .wsmenu-click.ws-activearrow>i {
     transform: rotate(-45deg);
     margin-top: 23px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmenu-click>i {
+  .wsmenu>.wsmenu-list>li>.wsmenu-click>i {
     display: block;
     height: 8px;
     width: 8px;
@@ -1446,7 +1444,7 @@ video {
     margin: 18px 18px 0px 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > .wsmenu-click>i:before {
+  .wsmenu>.wsmenu-list>li>.wsmenu-click>i:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -1458,7 +1456,7 @@ video {
     transform-origin: 100% 0;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li .wsmenu-click02 {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02 {
     height: 41px;
     position: absolute;
     top: 0;
@@ -1468,7 +1466,7 @@ video {
     width: 100%;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li .wsmenu-click02>i {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02>i {
     display: block;
     height: 8px;
     width: 8px;
@@ -1477,7 +1475,7 @@ video {
     margin: 14px 18px 0px 0px;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li .wsmenu-click02>i:before {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02>i:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -1489,7 +1487,7 @@ video {
     transform-origin: 100% 0;
   }
 
-  .wsmenu > .wsmenu-list > li > ul.sub-menu > li .wsmenu-click02>i.wsmenu-rotate {
+  .wsmenu>.wsmenu-list>li>ul.sub-menu>li .wsmenu-click02>i.wsmenu-rotate {
     transform: rotate(-45deg);
     margin-top: 19px;
   }
@@ -1503,16 +1501,16 @@ video {
     margin-left: 12px;
   }
 
-  .wsmenu > .wsmenu-list > li > a > .wsarrow {
+  .wsmenu>.wsmenu-list>li>a>.wsarrow {
     display: none;
   }
 
-  .wsmenu > .wsmenu-list > li > a {
+  .wsmenu>.wsmenu-list>li>a {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  .wsmenu > .wsmenu-list > li a.menuhomeicon {
+  .wsmenu>.wsmenu-list>li a.menuhomeicon {
     padding-left: 22px;
     padding-right: 22px;
   }
