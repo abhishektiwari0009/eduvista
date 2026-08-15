@@ -6386,6 +6386,11 @@
     padding-bottom: 35px !important;
   }
 
+  /* Grid Column Mobile Wrapping */
+  .col-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 /* Disable & Hide Scroll to Top Button Globally */
