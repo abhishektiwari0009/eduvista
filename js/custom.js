@@ -616,6 +616,16 @@
 			5: 'This email address looks fake or invalid. Please enter a real email address'
 		};	
 
+		/*----------------------------------------------------*/
+		/*	Custom Navigation Dropdown for Mobile
+		/*----------------------------------------------------*/
+		$('.wsmenu-dropdown > a').on('click', function(e) {
+			if ($(window).width() < 992) {
+				e.preventDefault();
+				$(this).parent().toggleClass('active');
+				$(this).siblings('.wsmenu-dropdown-menu').slideToggle('fast');
+			}
+		});
 
 	});
 

@@ -54,6 +54,9 @@
 		
 		<!-- RESPONSIVE CSS -->
 		<link href="css/responsive.css" rel="stylesheet"> 
+
+		<!-- ORGANOGRAM CSS -->
+		<link href="css/organogram.css" rel="stylesheet"> 
 	
 	<style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
 
@@ -90,7 +93,7 @@
           <!-- MOBILE HEADER -->
           <div class="wsmobileheader clearfix">
             <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-            <span class="smllogo"><img src="images/brandlogo.png" width="200" height="50" alt="mobile-logo"></span>
+            <span class="smllogo"><img src="images/brandlogo.png" alt="mobile-logo" style="max-height: 50px; width: auto; object-fit: contain;"></span>
             <a href="tel:+918282002268" class="callusbtn"><i class="fas fa-phone"></i></a>
           </div>
 
@@ -124,8 +127,7 @@
 
 
               <!-- LOGO IMAGE -->
-              <div class="desktoplogo"><a href="index.html" class="logo-black"><img src="images/brandlogo.png" width="200"
-                    height="50" alt="header-logo"></a></div>
+              <div class="desktoplogo"><a href="index.html" class="logo-black"><img src="images/brandlogo.png" alt="header-logo" style="max-height: 55px; width: auto; object-fit: contain;"></a></div>
 
 
               <!-- MAIN MENU -->
@@ -133,8 +135,28 @@
                 <div class="overlapblackbg"></div>
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About Us</a>
-                <a href="index.html#services-9">Course List</a>
-                <a href="course-details.html">Course Details</a>
+                <div class="wsmenu-dropdown">
+                  <a href="javascript:void(0)">Countries <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+                  <div class="wsmenu-dropdown-menu">
+                    <a href="countyies/UK.html">Study in UK</a>
+                    <a href="countyies/USA.html">Study in USA</a>
+                    <a href="countyies/Canada.html">Study in Canada</a>
+                    <a href="countyies/Australia.html">Study in Australia</a>
+                    <a href="countyies/Germany.html">Study in Germany</a>
+                    <a href="countyies/Italy.html">Study in Italy</a>
+                    <a href="countyies/Malaysia.html">Study in Malaysia</a>
+                    <a href="countyies/China.html">Study in China</a>
+                    <a href="countyies/Cyprus.html">Study in Cyprus</a>
+                    <a href="countyies/Finland.html">Study in Finland</a>
+                    <a href="countyies/Sweden.html">Study in Sweden</a>
+                    <a href="countyies/Portugal.html">Study in Portugal</a>
+                    <a href="countyies/Japan.html">Study in Japan</a>
+                    <a href="countyies/Bangladesh.html">Study in Bangladesh</a>
+                    <a href="countyies/Hungary.html">Study in Hungary</a>
+                    <a href="countyies/Singapore.html">Study in Singapore</a>
+                    <a href="countyies/France.html">Study in France</a>
+                  </div>
+                </div>
                 <a href="partners.html">Partner Colleges</a>
                 <a href="partners.html">Blog</a>
                 <a href="index.html#enquiry-cta" class="header-btn btn-primary tra-black-hover">Get Consultation</a>
@@ -359,9 +381,549 @@
 
 
 
+				<!-- ORGANOGRAM
+				============================================= -->
+				<section id="organogram" class="organogram-section division">
+					<div class="organogram-container">
+
+						<!-- Section Header -->
+						<div class="org-header">
+							<div class="d-flex align-items-center justify-content-center flex-wrap mb-4" style="gap: 20px;">
+								<!-- <img src="images/brandlogo.png" alt="EduVista Logo" style="max-height: 80px; width: auto; object-fit: contain;"> -->
+								<div class="text-left md-text-center">
+									<h2>EduVista International</h2>
+									<div class="org-subtitle-wrapper">
+										<h3 class="subtitle">Herarchiy of eduvista</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tier 1 & 2 & 3: Board -> Chairperson -> MD & Advisory -->
+						<div class="org-tree">
+							<!-- Board of Directors -->
+							<div class="org-card org-exec-card org-board">
+								<div class="org-icon"><i class="fas fa-users-cog"></i></div>
+								<h4>Board of Directors</h4>
+								<p>Policy | Oversight | Governance</p>
+							</div>
+
+							<!-- Connecting Line -->
+							<div class="org-v-line"></div>
+
+							<!-- Chairperson -->
+							<div class="org-card org-exec-card org-chairperson">
+								<div class="org-icon"><i class="fas fa-user-tie"></i></div>
+								<h4>Chairperson</h4>
+								<p>Vision | Leadership | Strategic Direction</p>
+							</div>
+
+							<!-- Connecting Line -->
+							<div class="org-v-line"></div>
+
+							<!-- MD Row (with Advisory Council) -->
+							<div class="org-md-row">
+								<!-- Managing Director -->
+								<div class="org-card org-exec-card org-md">
+									<div class="org-icon"><i class="fas fa-user-shield"></i></div>
+									<h4>Managing Director (MD)</h4>
+									<p>Overall Leadership | Strategy | Growth</p>
+								</div>
+
+								<!-- Advisory Council -->
+								<div class="org-advisory-wrapper">
+									<div class="org-advisory-line"></div>
+									<div class="org-card org-advisory">
+										<div class="org-icon"><i class="fas fa-user-friends"></i></div>
+										<h4>Advisory Council</h4>
+										<p>Academic & Industry Experts</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tier 4: Chief Officers (C-Suite) -->
+						<div class="org-chiefs-wrapper">
+							<div class="org-chiefs-row">
+								<!-- COO -->
+								<div class="org-card org-chief-card">
+									<div class="org-icon"><i class="fas fa-cogs"></i></div>
+									<div class="org-chief-card-body">
+										<h4>Chief Operating Officer (COO)</h4>
+										<p>Operations & Service Delivery</p>
+									</div>
+								</div>
+
+								<!-- CAO (Academic) -->
+								<div class="org-card org-chief-card">
+									<div class="org-icon"><i class="fas fa-graduation-cap"></i></div>
+									<div class="org-chief-card-body">
+										<h4>Chief Academic Officer (CAO)</h4>
+										<p>Academic Excellence & Quality</p>
+									</div>
+								</div>
+
+								<!-- CSO -->
+								<div class="org-card org-chief-card">
+									<div class="org-icon"><i class="fas fa-lightbulb"></i></div>
+									<div class="org-chief-card-body">
+										<h4>Chief Strategy Officer (CSO)</h4>
+										<p>Strategy, Partnerships & Business Development</p>
+									</div>
+								</div>
+
+								<!-- CMCO -->
+								<div class="org-card org-chief-card">
+									<div class="org-icon"><i class="fas fa-bullhorn"></i></div>
+									<div class="org-chief-card-body">
+										<h4>Chief Marketing & Communication Officer (CMCO)</h4>
+										<p>Branding, Marketing & Communication</p>
+									</div>
+								</div>
+
+								<!-- CFO -->
+								<div class="org-card org-chief-card">
+									<div class="org-icon"><i class="fas fa-chart-line"></i></div>
+									<div class="org-chief-card-body">
+										<h4>Chief Financial Officer (CFO)</h4>
+										<p>Finance, Accounts & Compliance</p>
+									</div>
+								</div>
+
+								<!-- CAO (Administrative) -->
+								<div class="org-card org-chief-card">
+									<div class="org-icon"><i class="fas fa-briefcase"></i></div>
+									<div class="org-chief-card-body">
+										<h4>Chief Administrative Officer (CAO)</h4>
+										<p>HR, Admin & General Management</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tier 5: Divisional Columns (10 Functional Divisions) -->
+						<div class="org-divisions-wrapper">
+							<div class="org-divisions-row">
+								<!-- Academic Planning -->
+								<div class="org-card org-dept-card dept-academic">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-book"></i></div>
+										<h4>Academic Planning</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Curriculum Design</li>
+											<li>Academic Framework</li>
+											<li>Program Development</li>
+											<li>Academic Standards</li>
+										</ul>
+									</div>
+								</div>
+								
+								<!-- Student Career Guidance -->
+								<div class="org-card org-dept-card dept-career">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-user-graduate"></i></div>
+										<h4>Student Career Guidance</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Career Counselling</li>
+											<li>Psychometric Assessment</li>
+											<li>Career Pathway Planning</li>
+											<li>Industry Connect</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Teacher Training -->
+								<div class="org-card org-dept-card dept-teacher">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+										<h4>Teacher Training</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Teacher Training Programs</li>
+											<li>Professional Development</li>
+											<li>Capacity Building</li>
+											<li>Training Evaluation</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Educational Institution Setup -->
+								<div class="org-card org-dept-card dept-setup">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-university"></i></div>
+										<h4>Educational Institution Setup</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Feasibility Study</li>
+											<li>Institution Setup Support</li>
+											<li>Infrastructure Planning</li>
+											<li>Regulatory & Liaison Support</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- EdTech Consultancy -->
+								<div class="org-card org-dept-card dept-edtech">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-laptop-code"></i></div>
+										<h4>EdTech Consultancy</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>EdTech Strategy</li>
+											<li>LMS & Digital Solutions</li>
+											<li>Technology Integration</li>
+											<li>Digital Transformation</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Quality Assurance & Accreditation -->
+								<div class="org-card org-dept-card dept-quality">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-award"></i></div>
+										<h4>Quality Assurance & Accreditation</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Quality Framework Development</li>
+											<li>Accreditation Support</li>
+											<li>Audit & Evaluation</li>
+											<li>Continuous Improvement</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Marketing & Branding -->
+								<div class="org-card org-dept-card dept-marketing">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-bullhorn"></i></div>
+										<h4>Marketing & Branding</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Brand Strategy</li>
+											<li>Digital Marketing</li>
+											<li>Campaign Management</li>
+											<li>Public Relations</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Administrative Consultancy -->
+								<div class="org-card org-dept-card dept-admin">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-folder-open"></i></div>
+										<h4>Administrative Consultancy</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Policy & Procedure Development</li>
+											<li>Process Optimization</li>
+											<li>Governance Support</li>
+											<li>Institutional Management</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Skill Development & Vocational Training Planning -->
+								<div class="org-card org-dept-card dept-skill">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-tools"></i></div>
+										<h4>Skill Dev & Vocational Training</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Skills Mapping</li>
+											<li>Training Program Design</li>
+											<li>Industry Alignment</li>
+											<li>Vocational Program Development</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Research & Education Policy Consultancy -->
+								<div class="org-card org-dept-card dept-research">
+									<div class="org-dept-header">
+										<div class="org-icon"><i class="fas fa-search-plus"></i></div>
+										<h4>Research & Ed Policy Consultancy</h4>
+									</div>
+									<div class="org-dept-body">
+										<ul>
+											<li>Research Support</li>
+											<li>Policy Analysis</li>
+											<li>Data & Evidence Based Planning</li>
+											<li>Education Policy Advisory</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tier 6: International Education & Student Support Services -->
+						<div class="org-support-services">
+							<div class="org-support-header">
+								International Education & Student Support Services
+							</div>
+							<div class="org-support-grid">
+								<div class="org-support-item org-support-grid-divider">
+									<div class="org-icon"><i class="fas fa-compass"></i></div>
+									<h5>Expert Educational Guidance</h5>
+									<p>Personalized advice for study abroad programs and career pathways</p>
+								</div>
+								<div class="org-support-item org-support-grid-divider">
+									<div class="org-icon"><i class="fas fa-hand-holding-usd"></i></div>
+									<h5>Scholarship Assistance</h5>
+									<p>Helping students find and apply for suitable scholarships</p>
+								</div>
+								<div class="org-support-item org-support-grid-divider">
+									<div class="org-icon"><i class="fas fa-passport"></i></div>
+									<h5>Visa Processing Support</h5>
+									<p>End-to-end support for student visa application and follow-up</p>
+								</div>
+								<div class="org-support-item org-support-grid-divider">
+									<div class="org-icon"><i class="fas fa-file-signature"></i></div>
+									<h5>Document Verification & Attestation</h5>
+									<p>Assistance with document verification, attestation & legalization</p>
+								</div>
+								<div class="org-support-item org-support-grid-divider">
+									<div class="org-icon"><i class="fas fa-language"></i></div>
+									<h5>IELTS & English Prep</h5>
+									<p>IELTS coaching and English training for academic success</p>
+								</div>
+								<div class="org-support-item">
+									<div class="org-icon"><i class="fas fa-plane-departure"></i></div>
+									<h5>Pre-Departure & Post-Arrival Support</h5>
+									<p>Guidance before departure and continuous support after arrival</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tier 7: Support & Central Functions -->
+						<div class="org-central-functions">
+							<div class="org-central-header">
+								Support & Central Functions
+							</div>
+							<div class="org-central-grid">
+								<div class="org-central-item">
+									<div class="org-icon"><i class="fas fa-users"></i></div>
+									<span>Human Resources</span>
+								</div>
+								<div class="org-central-item">
+									<div class="org-icon"><i class="fas fa-calculator"></i></div>
+									<span>Finance & Accounts</span>
+								</div>
+								<div class="org-central-item">
+									<div class="org-icon"><i class="fas fa-desktop"></i></div>
+									<span>IT & Systems</span>
+								</div>
+								<div class="org-central-item">
+									<div class="org-icon"><i class="fas fa-balance-scale"></i></div>
+									<span>Legal & Compliance</span>
+								</div>
+								<div class="org-central-item">
+									<div class="org-icon"><i class="fas fa-chart-bar"></i></div>
+									<span>Monitoring & Evaluation</span>
+								</div>
+								<div class="org-central-item">
+									<div class="org-icon"><i class="fas fa-folder-open"></i></div>
+									<span>Documentation & Knowledge Management</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slogan -->
+						<div class="org-slogan-wrapper">
+							<i class="fas fa-star"></i>
+							<h3 class="org-slogan-text">Empowering Education. Enriching Futures.</h3>
+							<i class="fas fa-star"></i>
+						</div>
+
+					</div>
+				</section>
+
+
+
+
+				<!-- EXECUTIVE BODY
+				============================================= -->
+				<section id="executive-body" class="exec-body-section division">
+					<div class="container">
+
+						<!-- Section Header -->
+						<div class="row">
+							<div class="col-md-12 section-title">
+								<h2>Executive Body</h2>
+								<span class="subtitle">Office of the Managing Director</span>
+							</div>
+						</div>
+
+						<!-- Executive Card -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="exec-card">
+									<!-- Executive Card Header -->
+									<div class="exec-header">
+										<div class="exec-avatar-icon">
+											<i class="fas fa-user-tie"></i>
+										</div>
+										<div class="exec-title">
+											<h4>Saswati Rakshit</h4>
+											<p>Managing Director</p>
+										</div>
+									</div>
+
+									<!-- Contact Info Grid -->
+									<div class="exec-grid">
+										<!-- Contact Person -->
+										<div class="exec-info-item">
+											<div class="info-icon">
+												<i class="fas fa-id-badge"></i>
+											</div>
+											<div class="exec-info-content">
+												<h5>Contact Person</h5>
+												<p>Saswati Rakshit</p>
+											</div>
+										</div>
+
+										<!-- Designation -->
+										<div class="exec-info-item">
+											<div class="info-icon">
+												<i class="fas fa-user-shield"></i>
+											</div>
+											<div class="exec-info-content">
+												<h5>Designation</h5>
+												<p>Managing Director</p>
+											</div>
+										</div>
+
+										<!-- Phone -->
+										<div class="exec-info-item">
+											<div class="info-icon">
+												<i class="fas fa-phone"></i>
+											</div>
+											<div class="exec-info-content">
+												<h5>Phone Number</h5>
+												<p>
+													<a href="tel:+918282002268">+91 8282002268</a>, 
+													<a href="tel:+918282002258">+91 8282002258</a>
+												</p>
+											</div>
+										</div>
+
+										<!-- Website -->
+										<div class="exec-info-item">
+											<div class="info-icon">
+												<i class="fas fa-globe"></i>
+											</div>
+											<div class="exec-info-content">
+												<h5>Website</h5>
+												<p><a href="https://www.eduvistaint.com" target="_blank">www.eduvistaint.com</a></p>
+											</div>
+										</div>
+
+										<!-- E-mails -->
+										<div class="exec-info-item exec-info-full">
+											<div class="info-icon">
+												<i class="fas fa-envelope"></i>
+											</div>
+											<div class="exec-info-content">
+												<h5>Email Address</h5>
+												<p>
+													<a href="mailto:info@eduvastaint.com">info@eduvastaint.com</a> &nbsp;|&nbsp; 
+													<a href="mailto:eduvasta50@gmail.com">eduvasta50@gmail.com</a>
+												</p>
+											</div>
+										</div>
+
+										<!-- Address -->
+										<div class="exec-info-item exec-info-full">
+											<div class="info-icon">
+												<i class="fas fa-map-marker-alt"></i>
+											</div>
+											<div class="exec-info-content">
+												<h5>Office Address</h5>
+												<p>236, Jodhpur Gardens, Ground Floor, Flat No. G2, P.S. Lake, Kolkata – 700045.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+
+
+
 				<!-- SERVICES-6
 				============================================= -->
 				<section id="services-6" class="bg-lightgrey wide-100 services-section division">
+					<style>
+						.core-services-grid .service-card {
+							background: #ffffff;
+							border: 1px solid #eef2f5;
+							border-radius: 12px;
+							box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+							transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+							display: flex;
+							flex-direction: column;
+							padding: 30px 25px;
+							height: 100%;
+						}
+
+						.core-services-grid .service-card:hover {
+							transform: translateY(-8px);
+							box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08) !important;
+							border-color: #ff4500 !important;
+						}
+
+						.core-services-grid .service-card.highlighted {
+							background: linear-gradient(135deg, #0b1f3a 0%, #162c46 100%) !important;
+							border: none !important;
+							color: #ffffff !important;
+							box-shadow: 0 8px 20px rgba(11, 31, 58, 0.15) !important;
+							position: relative;
+							overflow: hidden;
+						}
+
+						.core-services-grid .service-card.highlighted h5 {
+							color: #ffffff !important;
+						}
+
+						.core-services-grid .service-card.highlighted:hover {
+							transform: translateY(-8px);
+							box-shadow: 0 15px 35px rgba(255, 69, 0, 0.25) !important;
+						}
+
+						.core-services-grid .service-card ul {
+							list-style: none;
+							padding-left: 0;
+							margin-bottom: 0;
+						}
+
+						.core-services-grid .service-card ul li {
+							position: relative;
+							padding-left: 22px;
+							margin-bottom: 8px;
+							font-size: 0.95rem;
+							line-height: 1.5;
+						}
+
+						.core-services-grid .service-card ul li i {
+							position: absolute;
+							left: 0;
+							top: 5px;
+							font-size: 12px;
+						}
+					</style>
 					<div class="container">
 
 
@@ -370,95 +932,311 @@
 							<div class="col-md-12 section-title center">		
 
 				 				<!-- Title -->
-								<h2 class="h2-xs darkblue-color">Our Key Student Services</h2>
+								<h2 class="h2-xs darkblue-color">Our Core Services</h2>
 
 								<!-- Text -->	
-								<p class="p-md">We provide expert guidance and personalized support at every stage of your international study journey.</p> 
+								<p class="p-md">We provide professional and innovative educational consultancy services
+									designed to support students, educators, and educational institutions in
+									achieving academic excellence and sustainable growth. Our goal is to deliver
+									quality guidance, strategic planning, and modern solutions that create lasting
+									impact in the education sector.</p> 
 
 							</div>
 						</div>
 
 
-						<div class="row d-flex align-items-center">
+						<div class="row d-flex align-items-stretch core-services-grid mt-30">
 
 
 							<!-- SERVICE BOX #1 -->
-							<div id="sb-01" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">University/College Selection</h5>
-									<p class="p-sm">Expert guidance to select top-ranked institutions suited to your academic background and career goals.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-university"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Education Institutional Consultancy Services</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Working as a representative of foreign Universities</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>University Partnership Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Student Recruitment Services</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>International Exchange Program Facilitation</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Training &amp; Capacity Building Programs</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Personalized academic and career counseling</li>
+									</ul>
 								</div>							
 							</div>
 
 
 							<!-- SERVICE BOX #2 -->
-							<div id="sb-02" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Course Selection Guidance</h5>
-									<p class="p-sm">Personalized advice on choosing the right academic programs and courses for your future aspirations.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-user-graduate"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Expert Educational Guidance</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>University selection</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Application processing</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Statement of Purpose (SOP) guidance</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Recommendation Letter support</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Scholarship and Funding Guidance</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Guidance for Credit Transfer &amp; Pathway Program</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Study destination selection</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Course and university matching</li>
+									</ul>
 								</div>							
 							</div>
 
 
-							<!-- SERVICE BOX #3 -->
-							<div id="sb-03" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Admission Assistance</h5>
-									<p class="p-sm">Step-by-step support through the admission process for prestigious universities and colleges worldwide.</p>
-								</div>							
+							<!-- SERVICE BOX #3: SCHOLARSHIP ASSISTANCE (HIGHLIGHTED) -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card highlighted p-4">
+									<span class="badge" style="background: #ff4500; color: #fff; position: absolute; top: 15px; right: 15px; font-size: 11px; font-weight: 700; padding: 5px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);">Featured</span>
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-award"></i>
+										</div>
+										<h5 class="h5-xs font-weight-bold m-0" style="color: #ffffff;">Scholarship Assistance</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle mr-2" style="color: #ff4500;"></i>Scholarship search and matching</li>
+										<li><i class="fas fa-check-circle mr-2" style="color: #ff4500;"></i>Application support</li>
+										<li><i class="fas fa-check-circle mr-2" style="color: #ff4500;"></i>Merit-based and need-based scholarship guidance</li>
+									</ul>
+								</div>
 							</div>
 
 
 							<!-- SERVICE BOX #4 -->
-							<div id="sb-04" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Application Assistance</h5>
-									<p class="p-sm">Complete assistance with preparing, reviewing, and submitting accurate university applications.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-passport"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Visa Processing Support</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Student &amp; Dependent Visa Processing</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Visa Eligibility &amp; Financial Guidance</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Mock Visa Interview Training</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Visa Application Support &amp; Follow-up</li>
+									</ul>
 								</div>							
 							</div>
 
 
 							<!-- SERVICE BOX #5 -->
-							<div id="sb-05" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Documentation Guidance</h5>
-									<p class="p-sm">Comprehensive support with organizing and verifying all necessary academic and financial documents.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-briefcase"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Career &amp; Professional Development</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Career Counseling</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Internship Placement Assistance</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Employability Skills Training</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>LinkedIn Profile Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Job Search Guidance</li>
+									</ul>
 								</div>							
 							</div>
 
 
 							<!-- SERVICE BOX #6 -->
-							<div id="sb-06" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Visa Guidance</h5>
-									<p class="p-sm">End-to-end assistance with student visa application requirements, documentation, and interview preparation.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-calendar-alt"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Academic Planning</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Curriculum Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Course Design &amp; Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Syllabus Preparation</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Educational Quality Enhancement</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Academic Calendar Planning</li>
+									</ul>
 								</div>							
 							</div>
 
 
 							<!-- SERVICE BOX #7 -->
-							<div id="sb-07" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Scholarship Guidance</h5>
-									<p class="p-sm">Identification of eligible scholarships and financial aid opportunities to support your global studies.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-compass"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Student Career Guidance</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Career Counseling</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Higher Education Guidance</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Subject Selection Support</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Skills Assessment</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Career Development Planning</li>
+									</ul>
 								</div>							
 							</div>
 
 
 							<!-- SERVICE BOX #8 -->
-							<div id="sb-08" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Pre-Departure Guidance</h5>
-									<p class="p-sm">Essential briefings, travel advice, accommodation support, and orientation before moving abroad.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-chalkboard-teacher"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Teacher Training</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Modern Teaching Methodologies</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Classroom Management</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Professional Development Programs</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Digital Teaching Tools Training</li>
+									</ul>
 								</div>							
 							</div>
 
 
 							<!-- SERVICE BOX #9 -->
-							<div id="sb-09" class="col-md-6 col-lg-4 sb-box">
-								<div class="sbox-6">
-									<h5 class="h5-lg darkblue-color">Career/Education Counselling</h5>
-									<p class="p-sm">One-on-one professional counseling to map out long-term global academic and career pathways.</p>
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-building"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Educational Institution Setup</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>School/College/Training Center Setup</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Institutional Planning &amp; Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Policy &amp; Operational Framework</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Registration &amp; Approval Guidance</li>
+									</ul>
+								</div>							
+							</div>
+
+
+							<!-- SERVICE BOX #10 -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-laptop-code"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Educational Technology (EdTech) Consultancy</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Learning Management System (LMS) Setup</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Smart Classroom Solutions</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Digital Education Systems</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Online Learning Support</li>
+									</ul>
+								</div>							
+							</div>
+
+
+							<!-- SERVICE BOX #11 -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-clipboard-check"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Quality Assurance &amp; Accreditation</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Quality Assessment</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Educational Standards Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Documentation Support</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Accreditation Preparation</li>
+									</ul>
+								</div>							
+							</div>
+
+
+							<!-- SERVICE BOX #12 -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-bullhorn"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Marketing &amp; Branding</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Digital Marketing</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Social Media Management</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Student Recruitment Strategies</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Brand Development</li>
+									</ul>
+								</div>							
+							</div>
+
+
+							<!-- SERVICE BOX #13 -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-users-cog"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Administrative Consultancy</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Human Resource (HR) Support</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Policy Development</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Fee Structure Planning</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Operational Management</li>
+									</ul>
+								</div>							
+							</div>
+
+
+							<!-- SERVICE BOX #14 -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-tools"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Skill Development &amp; Vocational Training Planning</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Skills Development Programs</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Vocational Training Solutions</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Employment Readiness Programs</li>
+									</ul>
+								</div>							
+							</div>
+
+
+							<!-- SERVICE BOX #15 -->
+							<div class="col-md-6 col-lg-4 mb-30">
+								<div class="service-card p-4">
+									<div class="d-flex align-items-center mb-20">
+										<div class="icon-md primary-color mr-3" style="font-size: 28px; color: #ff4500;">
+											<i class="fas fa-search-plus"></i>
+										</div>
+										<h5 class="h5-xs darkblue-color font-weight-bold m-0">Research &amp; Education Policy Consultancy / Academic Planning</h5>
+									</div>
+									<ul class="abox-list">
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Educational Research</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Data Analysis</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Policy Planning</li>
+										<li><i class="fas fa-check-circle primary-color mr-2" style="color: #ff4500;"></i>Educational Development Strategies</li>
+									</ul>
 								</div>							
 							</div>
 
@@ -1294,87 +2072,255 @@
 				<!-- FOOTER-1
 				============================================= -->
 				<footer id="footer-1" class="bg-blue-map wide-40 footer division">
-					<div class="container white-color">
+        <div class="container white-color">
 
-						<!-- FOOTER CONTENT -->
-						<div class="row">
 
-							<!-- FOOTER INFO -->
-							<div class="col-xl-3 col-lg-4">
-								<div class="footer-info mb-40">
-									<img src="images/brandlogo.png" width="210" height="50" alt="footer-logo" style="max-height: 55px; width: auto; object-fit: contain;">
-									<p class="p-sm mt-25">
-										<strong>EDUVISTA INTERNATIONAL</strong> is a trusted student consultancy and international education service provider dedicated to helping students achieve their global academic and career ambitions.
-									</p>
-								</div>
-							</div>
+          <!-- FOOTER CONTENT -->
+          <div class="row">
 
-							<!-- FOOTER CONTACTS -->
-							<div class="col-xl-4 col-lg-4">
-								<div class="footer-box mb-40">
-									<h5 class="h5-md">Contact Details</h5>
-									<p class="p-sm mb-10"><i class="fas fa-map-marker-alt primary-color mr-2"></i> 236, Jodhpur Gardens, Ground Floor, Flat No. G2, P.S. Lake, Kolkata</p>
-									<p class="p-sm mb-5"><i class="fas fa-user-tie primary-color mr-2"></i> Contact Person: <strong>Ms. Saswati Rakshit</strong></p>
-									<p class="p-sm mb-15"><i class="fas fa-id-badge primary-color mr-2"></i> Designation: <strong>Managing Director</strong></p>
-									<p class="p-sm mb-5"><i class="fas fa-phone-alt primary-color mr-2"></i> Phone: <a href="tel:+918282002268">+91 8282002268</a>, <a href="tel:+918282002258">+91 8282002258</a></p>
-									<p class="p-sm foo-email mb-15"><i class="fas fa-envelope primary-color mr-2"></i> Email: <a href="mailto:eduvasta50@gmail.com">eduvasta50@gmail.com</a></p>
-									<p class="p-sm mb-5"><i class="far fa-clock primary-color mr-2"></i> Mon - Fri: 9:00 AM - 6:30 PM</p>
-									<p class="p-sm"><i class="far fa-clock primary-color mr-2"></i> Saturday: 8:30 AM - 3:30 PM (Sunday Closed)</p>
-								</div>
-							</div>
 
-							<!-- FOOTER LINKS -->
-							<div class="col-xl-2 col-lg-4">
-								<div class="footer-links mb-40">
-									<h5 class="h5-md">Quick Links</h5>
-									<ul class="foo-links clearfix">
-										<li><a href="about.html">About EduVista</a></li>
-										<li><a href="index.html#key-consultancy-services">Our Services</a></li>
-										<li><a href="index.html#why-choose-us">Why Choose Us</a></li>
-										<li><a href="country-list.html">Destinations</a></li>
-										<li><a href="index.html#enquiry-cta">Contact Us</a></li>
-									</ul>
-								</div>
-							</div>
+            <!-- FOOTER INFO -->
+            <div class="col-xl-3 col-lg-4">
+              <div class="footer-info mb-40">
 
-							<!-- FOOTER NEWSLETTER FORM -->
-							<div class="col-xl-3 col-lg-4">
-								<div class="footer-form mb-20">
-									<h5 class="h5-md">Stay Informed</h5>
-									<p class="p-sm">Subscribe to our newsletter to receive global education updates and guidance.</p>
-									<form class="newsletter-form" novalidate="true">
-										<div class="input-group">
-											<input type="email" class="form-control" placeholder="Your email address" required="" id="s-email" name="EMAIL">
-											<span class="input-group-btn">
-												<button type="submit" class="btn btn-primary tra-white-hover">Subscribe</button>
-											</span>
-										</div>
-										<label for="s-email" class="form-notification"></label>
-									</form>
-								</div>
-							</div>
+                <!-- Footer Logo -->
+                <img src="images/brandlogo.png" width="210" height="50" alt="footer-logo"
+                  style="max-height: 55px; width: auto; object-fit: contain;">
 
-						</div> <!-- END FOOTER CONTENT -->
+                <!-- Text -->
+                <p class="p-sm mt-25">
+                  <strong>EDUVISTA INTERNATIONAL</strong> is a trusted student consultancy and international education
+                  service provider dedicated to helping students achieve their global academic and career ambitions.
+                </p>
 
-						<!-- BOTTOM FOOTER -->
-						<div class="bottom-footer">
-							<div class="row d-flex align-items-center">
-								<div class="col-lg-6">
-									<p class="footer-copyright">© Copyright <span>EduVista International</span>. All Rights Reserved</p>
-								</div>
-								<div class="col-lg-6 text-right">
-									<ul class="foo-socials text-center clearfix">
-										<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#" class="ico-linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div> <!-- END BOTTOM FOOTER -->
+              </div>
+            </div>
 
-					</div> <!-- End container -->
-				</footer> <!-- END FOOTER-1 -->
+
+            <!-- FOOTER CONTACTS -->
+            <div class="col-xl-4 col-lg-4">
+              <div class="footer-box mb-40">
+
+                <!-- Title -->
+                <h5 class="h5-md">Contact Details</h5>
+
+                <!-- Address -->
+                <p class="p-sm mb-10"><i class="fas fa-map-marker-alt primary-color mr-2"></i> 236, Jodhpur Gardens,
+                  Ground Floor, Flat No. G2, P.S. Lake, Kolkata</p>
+
+                <p class="p-sm mb-5"><i class="fas fa-user-tie primary-color mr-2"></i> Contact Person: <strong>Ms.
+                    Saswati Rakshit</strong></p>
+                <p class="p-sm mb-15"><i class="fas fa-id-badge primary-color mr-2"></i> Designation: <strong>Managing
+                    Director</strong></p>
+
+                <!-- Phone -->
+                <p class="p-sm mb-5"><i class="fas fa-phone primary-color mr-2"></i> Phone: <a
+                    href="tel:+918282002268">+91 8282002268</a>, <a href="tel:+918282002258">+91 8282002258</a></p>
+
+                <!-- Email -->
+                <p class="p-sm foo-email mb-15"><i class="fas fa-envelope primary-color mr-2"></i> Email: <a
+                    href="mailto:eduvasta50@gmail.com">eduvasta50@gmail.com</a></p>
+
+                <!-- Working Hours -->
+                <p class="p-sm mb-5"><i class="far fa-clock primary-color mr-2"></i> Mon - Fri: 9:00 AM - 6:30 PM</p>
+                <p class="p-sm"><i class="far fa-clock primary-color mr-2"></i> Saturday: 8:30 AM - 3:30 PM (Sunday
+                  Closed)</p>
+
+              </div>
+            </div>
+
+
+            <!-- FOOTER LINKS -->
+            <div class="col-xl-2 col-lg-4">
+              <div class="footer-links mb-40">
+
+                <!-- Title -->
+                <h5 class="h5-md">Quick Links</h5>
+
+                <!-- Footer Links -->
+                <ul class="foo-links clearfix">
+                  <li><a href="about.html">About EduVista</a></li>
+                  <li><a href="#key-consultancy-services">Our Services</a></li>
+                  <li><a href="#why-choose-us">Why Choose Us</a></li>
+                  <li><a href="country-list.html">Destinations</a></li>
+                  <li><a href="contacts-1.html">Contact Us</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+
+            <!-- FOOTER NEWSLETTER FORM -->
+            <div class="col-xl-3 col-lg-4">
+              <div class="footer-form mb-20">
+
+                <!-- Title -->
+                <h5 class="h5-md">Stay Informed</h5>
+
+                <!-- Text -->
+                <p class="p-sm">Subscribe to our newsletter to receive global education updates and guidance.</p>
+
+                <!-- Newsletter Form Input -->
+                <form class="newsletter-form" novalidate="true">
+
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your email address" required="" id="s-email"
+                      name="EMAIL">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-primary tra-white-hover">Subscribe</button>
+                    </span>
+                  </div>
+
+                  <!-- Newsletter Form Notification -->
+                  <label for="s-email" class="form-notification"></label>
+
+                </form>
+
+              </div>
+            </div>
+
+
+          </div> <!-- END FOOTER CONTENT -->
+
+          <!-- USEFUL LINKS SECTION -->
+          <hr style="border-color: rgba(255, 255, 255, 0.08); margin: 30px 0 40px 0;">
+          <style>
+            .footer-useful-links h6 {
+              color: #ffffff;
+              font-size: 15px;
+              font-weight: 700;
+              margin-bottom: 15px;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+            }
+            .footer-useful-links ul {
+              list-style: none;
+              padding-left: 0;
+              margin-bottom: 0;
+            }
+            .footer-useful-links ul li {
+              margin-bottom: 8px;
+              font-size: 13.5px;
+            }
+            .footer-useful-links ul li a {
+              color: #bbb;
+              text-decoration: none;
+              transition: color 0.2s ease-in-out;
+            }
+            .footer-useful-links ul li a:hover {
+              color: #ff4500;
+            }
+            @media (min-width: 992px) {
+              .col-lg-5-cols {
+                flex: 0 0 20%;
+                max-width: 20%;
+              }
+            }
+          </style>
+          <div class="row footer-useful-links">
+            <div class="col-md-12 mb-25">
+              <h5 class="h5-sm text-uppercase font-weight-bold" style="color: #ff4500; letter-spacing: 1px; margin: 0;">Useful Links</h5>
+            </div>
+            
+            <!-- Category 1: Embassy / High Commission -->
+            <div class="col-lg-5-cols col-md-4 col-sm-6 mb-30">
+              <h6>Embassy / High Commission</h6>
+              <ul>
+                <li><a href="#">Australia Embassy / High Commission</a></li>
+                <li><a href="#">UK High Commission</a></li>
+                <li><a href="#">Canada High Commission</a></li>
+                <li><a href="#">USA Embassy</a></li>
+                <li><a href="#">Germany Embassy</a></li>
+                <li><a href="#">Ireland Embassy</a></li>
+                <li><a href="#">New Zealand High Commission</a></li>
+                <li><a href="#">Malta Embassy / Representation</a></li>
+              </ul>
+            </div>
+
+            <!-- Category 2: Immigration / Visa -->
+            <div class="col-lg-5-cols col-md-4 col-sm-6 mb-30">
+              <h6>Immigration / Visa</h6>
+              <ul>
+                <li><a href="#">Australia Department of Home Affairs</a></li>
+                <li><a href="#">UK Visas & Immigration (UKVI)</a></li>
+                <li><a href="#">Canada Immigration (IRCC)</a></li>
+                <li><a href="#">US Visa / Department of State</a></li>
+                <li><a href="#">Germany Visa / Make it in Germany</a></li>
+                <li><a href="#">Ireland Immigration Service</a></li>
+                <li><a href="#">New Zealand Immigration</a></li>
+              </ul>
+            </div>
+
+            <!-- Category 3: Education / University -->
+            <div class="col-lg-5-cols col-md-4 col-sm-6 mb-30">
+              <h6>Education / University</h6>
+              <ul>
+                <li>Official University Websites</li>
+                <li><a href="#">CRICOS (Australia)</a></li>
+                <li><a href="#">UCAS (UK)</a></li>
+                <li><a href="#">DAAD (Germany)</a></li>
+                <li><a href="#">EducationUSA</a></li>
+                <li><a href="#">EduCanada</a></li>
+                <li><a href="#">Study UK</a></li>
+                <li><a href="#">Study in Ireland</a></li>
+                <li><a href="#">Study with New Zealand</a></li>
+              </ul>
+            </div>
+
+            <!-- Category 4: English Language Tests -->
+            <div class="col-lg-5-cols col-md-4 col-sm-6 mb-30">
+              <h6>English Language Tests</h6>
+              <ul>
+                <li><a href="#">IELTS</a></li>
+                <li><a href="#">PTE Academic</a></li>
+                <li><a href="#">TOEFL</a></li>
+                <li><a href="#">Cambridge English</a></li>
+              </ul>
+            </div>
+
+            <!-- Category 5: Scholarship -->
+            <div class="col-lg-5-cols col-md-4 col-sm-6 mb-30">
+              <h6>Scholarship</h6>
+              <ul>
+                <li><a href="#">Government Scholarships</a></li>
+                <li><a href="#">University Scholarships</a></li>
+                <li><a href="#">Commonwealth Scholarships</a></li>
+                <li><a href="#">Erasmus+</a></li>
+                <li><a href="#">Chevening</a></li>
+                <li><a href="#">DAAD Scholarships</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- BOTTOM FOOTER -->
+          <div class="bottom-footer">
+            <div class="row d-flex align-items-center">
+
+
+              <!-- FOOTER COPYRIGHT -->
+              <div class="col-lg-6">
+                <p class="footer-copyright">© Copyright <span>EduVista International</span>. All Rights Reserved</p>
+              </div>
+
+
+              <!-- FOOTER SOCIALS LINKS -->
+              <div class="col-lg-6 text-right">
+                <ul class="foo-socials text-center clearfix">
+                  <li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#" class="ico-linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div> <!-- END BOTTOM FOOTER -->
+
+
+        </div> <!-- End container -->
+      </footer> <!-- END FOOTER-1 -->
 
 
 
