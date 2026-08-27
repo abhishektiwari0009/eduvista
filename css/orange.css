@@ -4805,7 +4805,7 @@ p.header-widget-phone {
 
 .statistic-section.bg-image {
     width: 100%;
-    background: url(../images/statistic.jpg) no-repeat fixed center;
+    background: linear-gradient(rgba(11, 31, 58, 0.9), rgba(11, 31, 58, 0.9)), url(../images/blue-map.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
@@ -6637,7 +6637,7 @@ p.foo-email a {
 }
 
 .breadcrumb {
-    padding: 15px 0 15px 5px;
+    padding: 25px 0 15px 5px;
     margin-bottom: 0;
     background-color: transparent;
     border-radius: 0;

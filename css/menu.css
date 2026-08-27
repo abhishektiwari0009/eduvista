@@ -105,6 +105,11 @@ video {
 
 .desktoplogo img {
   vertical-align: middle;
+  max-height: 85px !important;
+}
+
+.smllogo img {
+  max-height: 65px !important;
 }
 
 /* Navigation Menu */
