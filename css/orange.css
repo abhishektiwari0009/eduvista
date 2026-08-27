@@ -5944,7 +5944,7 @@ a.share-ico {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    s text-align: center;
+    text-align: center;
     color: #fff;
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
