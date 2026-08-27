@@ -1556,7 +1556,7 @@ span.section-id {
 }
 
 span.id-color {
-    color: #aaa;
+    color: #ff4500;
 }
 
 /*------------------------------------------*/
@@ -3650,11 +3650,18 @@ p.header-widget-phone {
     font-size: 1.175rem;
     font-weight: 400;
     width: auto !important;
-    display: block !important;
+    display: flex !important;
+    align-items: flex-start;
     vertical-align: top;
     clear: none !important;
     margin: 0 0 6px 0;
     padding: 0;
+}
+
+.abox-list li i {
+    margin-top: 0.35em;
+    margin-right: 8px;
+    flex-shrink: 0;
 }
 
 #about-7 .abox-list li {
