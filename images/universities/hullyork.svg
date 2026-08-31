@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 110" width="220" height="93">
+  <g transform="translate(42, 55)">
+    <line x1="0" y1="0" x2="-35" y2="0" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-32" y2="-15" stroke="#ef4444" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-25" y2="-27" stroke="#ec4899" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-14" y2="-34" stroke="#a855f7" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="-36" stroke="#3b82f6" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-32" y2="15" stroke="#f97316" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-25" y2="27" stroke="#eab308" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-14" y2="34" stroke="#84cc16" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="36" stroke="#06b6d4" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="10" y2="-32" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="10" y2="32" stroke="#10b981" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="16" y2="-20" stroke="#4338ca" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="16" y2="20" stroke="#047857" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g fill="#111827" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="20" letter-spacing="-0.5">
+    <text x="95" y="32">HULL</text>
+    <text x="95" y="54">YORK</text>
+    <text x="95" y="76">MEDICAL</text>
+    <text x="95" y="98">SCHOOL</text>
+  </g>
+</svg>
