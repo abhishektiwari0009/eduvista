@@ -545,10 +545,10 @@
                         
                         <!-- Header: Title -->
                         <div class="mb-30" style="border-bottom: 2px solid #eef2f5; padding-bottom: 16px;">
-                            <h1 id="pageMainHeading" class="m-0 darkblue-color font-weight-bold" style="font-size: 28px; color: #0b1f3a; letter-spacing: -0.5px;">MBBS in UK</h1>
+                            <h1 id="pageMainHeading" class="m-0 darkblue-color font-weight-bold" style="font-size: 28px; color: #0b1f3a; letter-spacing: -0.5px;">Study in UK</h1>
                         </div>
 
-                        <!-- 1. COURSE SELECT & 2. UNIVERSITY SELECT FILTER BOX -->
+                                                                        <!-- 1. COURSE SELECT & 2. UNIVERSITY SELECT FILTER BOX -->
                         <div class="filter-section-box">
                             <div class="row">
                                 <!-- First: 1. Course Select Option -->
@@ -557,32 +557,24 @@
                                         <i class="fas fa-book-open"></i> 1. Select Course / Program:
                                     </label>
                                     <select id="filterCourseSelect" class="form-control filter-select">
-                                        <option value="MBBS ( Medicine and Surgery )" selected>MBBS ( Medicine and Surgery )</option>
-                                        <option value="Biomedical Sciences">Biomedical Sciences &amp; Global Health</option>
-                                        <option value="Dentistry">Dentistry (BDS)</option>
-                                        <option value="Nursing">Nursing &amp; Healthcare</option>
+                                        <option value="ALL" selected>All Courses &amp; Programs</option>
+                                        <option value="MBBS ( Medicine and Surgery )">MBBS ( Medicine and Surgery )</option>
                                         <option value="Computer Science">Computer Science &amp; Artificial Intelligence</option>
-                                        <option value="Engineering">Engineering &amp; Technology</option>
-                                        <option value="Business">Business, MBA &amp; Finance</option>
-                                        <option value="ALL">All Courses &amp; Programs</option>
+                                        <option value="Business">Business &amp; Management (MBA &amp; Finance)</option>
                                     </select>
                                 </div>
 
                                 <!-- Second: 2. University & Schools Select Option -->
                                 <div class="col-md-6">
                                     <label class="filter-label" for="filterUniSelect">
-                                        <i class="fas fa-university"></i> 2. Select University &amp; Schools:
+                                        <i class="fas fa-university"></i> 2. Select University &amp; Colleges:
                                     </label>
                                     <select id="filterUniSelect" class="form-control filter-select">
-                                        <option value="ALL" selected>All Universities &amp; Medical Schools</option>
+                                        <option value="ALL" selected>All Universities &amp; Colleges</option>
                                         <option value="Cardiff University">Cardiff University</option>
-                                        <option value="Brighton & Sussex Medical School">Brighton &amp; Sussex Medical School</option>
-                                        <option value="Hull York Medical School">Hull York Medical School</option>
                                         <option value="University of Oxford">University of Oxford</option>
-                                        <option value="University of Cambridge">University of Cambridge</option>
                                         <option value="Imperial College London">Imperial College London</option>
-                                        <option value="King's College London">King's College London</option>
-                                        <option value="University of Manchester">University of Manchester</option>
+                                        <option value="Brighton & Sussex Medical School">Brighton &amp; Sussex Medical School</option>
                                     </select>
                                 </div>
                             </div>
@@ -897,40 +889,13 @@ const ukUniversitiesData = {
                 eligibility: "AAA at A-Level (including Chemistry & Biology) or 85%+ in High School + UCAT + IELTS 7.0."
             },
             {
-                name: "BSc Biomedical Sciences",
-                level: "Bachelor's",
-                duration: "3 Years",
-                category: "Biomedical Sciences",
-                intake: "September",
-                fees: "£24,500 per year",
-                eligibility: "AAB at A-Level or 80%+ in High School (Biology & Chemistry) + IELTS 6.5."
-            },
-            {
-                name: "BDS Dental Surgery",
-                level: "Bachelor's",
-                duration: "5 Years",
-                category: "Dentistry",
-                intake: "September",
-                fees: "£39,000 per year",
-                eligibility: "AAA at A-Level (Biology & Chemistry) + UCAT + IELTS 7.0."
-            },
-            {
-                name: "MSc Advanced Computer Science",
+                name: "MSc Advanced Computer Science & AI",
                 level: "Master's",
                 duration: "1 Year",
                 category: "Computer Science",
                 intake: "September / January",
                 fees: "£26,500 per year",
-                eligibility: "Bachelor's degree in Computer Science with 60%+ & IELTS 6.5."
-            },
-            {
-                name: "BEng / MEng Mechanical Engineering",
-                level: "Bachelor's / Master's",
-                duration: "3-4 Years",
-                category: "Engineering",
-                intake: "September",
-                fees: "£25,000 per year",
-                eligibility: "AAB with Maths & Physics + IELTS 6.5."
+                eligibility: "Bachelor's degree in Computer Science/IT with 60%+ & IELTS 6.5."
             },
             {
                 name: "Cardiff MBA (Master of Business Admin)",
@@ -939,7 +904,73 @@ const ukUniversitiesData = {
                 category: "Business",
                 intake: "September / January",
                 fees: "£27,000 per year",
-                eligibility: "Bachelor degree in any field + 2 years work experience + IELTS 6.5."
+                eligibility: "Bachelor degree in any discipline + 2 years work experience + IELTS 6.5."
+            }
+        ]
+    },
+    "University of Oxford": {
+        location: "Oxford , UK",
+        logo: "../images/universities/oxford.svg",
+        courses: [
+            {
+                name: "BA / MSc Computer Science & AI",
+                level: "Bachelor's / Master's",
+                duration: "3-4 Years",
+                category: "Computer Science",
+                intake: "October",
+                fees: "£39,010 - £44,240 per year",
+                eligibility: "A*AA with Mathematics at A-Level or 90%+ in High School + MAT score + IELTS 7.5."
+            },
+            {
+                name: "Oxford MBA (Said Business School)",
+                level: "Master's",
+                duration: "1 Year",
+                category: "Business",
+                intake: "September",
+                fees: "£71,440 total program fee",
+                eligibility: "Undergraduate degree + GMAT/GRE (690+ avg) + 2+ years relevant experience + IELTS 7.5."
+            },
+            {
+                name: "BM BCh Medicine (Clinical Medicine)",
+                level: "Bachelor's / MD",
+                duration: "6 Years",
+                category: "Medicine and Surgery",
+                intake: "October",
+                fees: "£41,500 per year",
+                eligibility: "A*AA in Chemistry & Mathematics/Biology + BMAT / UCAT + IELTS 7.5."
+            }
+        ]
+    },
+    "Imperial College London": {
+        location: "London , UK",
+        logo: "../images/universities/imperial.svg",
+        courses: [
+            {
+                name: "BEng / MEng Computing (AI & Machine Learning)",
+                level: "Bachelor's / Master's",
+                duration: "3-4 Years",
+                category: "Computer Science",
+                intake: "October",
+                fees: "£37,900 per year",
+                eligibility: "A*A*A in Mathematics + STEP/Assessment + IELTS 7.0."
+            },
+            {
+                name: "Imperial Full-Time MBA & Business Analytics",
+                level: "Master's",
+                duration: "1 Year",
+                category: "Business",
+                intake: "September",
+                fees: "£61,500 total program fee",
+                eligibility: "Bachelor degree + 3 years work experience + GMAT/GRE + IELTS 7.0."
+            },
+            {
+                name: "MBBS / BSc Medicine",
+                level: "Bachelor's / MD",
+                duration: "6 Years",
+                category: "Medicine and Surgery",
+                intake: "October",
+                fees: "£49,000 per year",
+                eligibility: "AAA (Biology & Chemistry) + UCAT + IELTS 7.0."
             }
         ]
     },
@@ -957,328 +988,13 @@ const ukUniversitiesData = {
                 eligibility: "AAA at A-Level (Biology & Chemistry) + UCAT / BMAT + IELTS 7.5 overall."
             },
             {
-                name: "MSc Global Health",
+                name: "MSc Global Health & Clinical Practice",
                 level: "Master's",
                 duration: "1 Year",
-                category: "Biomedical Sciences",
+                category: "Medicine and Surgery",
                 intake: "September",
-                fees: "£21,500 per year",
+                fees: "£22,000 per year",
                 eligibility: "Bachelor's in Health / Biological Sciences with 60%+ & IELTS 6.5."
-            },
-            {
-                name: "MSc Surgical Sciences & Practice",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Medicine and Surgery",
-                intake: "September",
-                fees: "£24,000 per year",
-                eligibility: "Primary medical degree (MBBS or equivalent) + IELTS 7.0."
-            },
-            {
-                name: "MSc Public Health & Epidemiology",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Biomedical Sciences",
-                intake: "September",
-                fees: "£21,500 per year",
-                eligibility: "Bachelor degree in biological/health sciences with 60%+ + IELTS 6.5."
-            }
-        ]
-    },
-    "Hull York Medical School": {
-        location: "Hatfield , UK",
-        logo: "../images/universities/hullyork.svg",
-        courses: [
-            {
-                name: "MBBS ( Medicine )",
-                level: "Bachelor's",
-                duration: "6 Years",
-                category: "Medicine",
-                intake: "September",
-                fees: "£38,500 - £43,500 per year",
-                eligibility: "AAA at A-Level in Chemistry and Biology + UCAT + IELTS 7.5."
-            },
-            {
-                name: "MSc Clinical Anatomy & Education",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Medicine",
-                intake: "September",
-                fees: "£23,000 per year",
-                eligibility: "Undergraduate degree in Medicine, Anatomy or relevant biosciences + IELTS 6.5."
-            },
-            {
-                name: "MSc Pharmacology & Drug Development",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Biomedical Sciences",
-                intake: "September",
-                fees: "£23,500 per year",
-                eligibility: "BSc in Pharmacology, Biochemistry or Health Science + IELTS 6.5."
-            },
-            {
-                name: "Master of Public Health (MPH)",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Medicine",
-                intake: "September",
-                fees: "£22,500 per year",
-                eligibility: "Bachelor degree in medical or health-related disciplines + IELTS 6.5."
-            }
-        ]
-    },
-    "University of Oxford": {
-        location: "Oxford , UK",
-        logo: "../images/universities/oxford.svg",
-        courses: [
-            {
-                name: "BM BCh Medicine (Clinical Medicine)",
-                level: "Bachelor's / MD",
-                duration: "6 Years",
-                category: "Medicine and Surgery",
-                intake: "October",
-                fees: "£41,500 per year",
-                eligibility: "A*AA in Chemistry & Mathematics/Biology + BMAT / UCAT + IELTS 7.5."
-            },
-            {
-                name: "BA / MSc Computer Science & AI",
-                level: "Bachelor's / Master's",
-                duration: "3-4 Years",
-                category: "Computer Science",
-                intake: "October",
-                fees: "£39,010 - £44,240 per year",
-                eligibility: "A*AA with Mathematics at A-Level or 90%+ in High School + MAT score + IELTS 7.5."
-            },
-            {
-                name: "MEng Engineering Science",
-                level: "Master's",
-                duration: "4 Years",
-                category: "Engineering",
-                intake: "October",
-                fees: "£44,240 per year",
-                eligibility: "A*A*A in Maths and Physics + PAT assessment + IELTS 7.5."
-            },
-            {
-                name: "Oxford MBA (Said Business School)",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£71,440 total program fee",
-                eligibility: "Undergraduate degree + GMAT/GRE + minimum 2 years relevant work experience."
-            },
-            {
-                name: "MSc Financial Economics (MFE)",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£52,560 total program fee",
-                eligibility: "Strong quantitative Bachelor degree + GMAT/GRE + IELTS 7.5."
-            }
-        ]
-    },
-    "University of Cambridge": {
-        location: "Cambridge , UK",
-        logo: "../images/universities/cambridge.svg",
-        courses: [
-            {
-                name: "MB BChir Clinical Medicine",
-                level: "Bachelor's / MD",
-                duration: "6 Years",
-                category: "Medicine and Surgery",
-                intake: "October",
-                fees: "£40,800 per year",
-                eligibility: "A*A*A in Chemistry and Bio/Maths + BMAT + IELTS 7.5."
-            },
-            {
-                name: "BA / MEng Computer Science",
-                level: "Bachelor's / Master's",
-                duration: "3-4 Years",
-                category: "Computer Science",
-                intake: "October",
-                fees: "£37,293 per year",
-                eligibility: "A*A*A with Mathematics + CSAT assessment + IELTS 7.5."
-            },
-            {
-                name: "MEng in Engineering & Technology",
-                level: "Master's",
-                duration: "4 Years",
-                category: "Engineering",
-                intake: "October",
-                fees: "£37,293 per year",
-                eligibility: "A*A*A at A-Level (Maths & Physics) + Engineering Assessment + IELTS 7.5."
-            },
-            {
-                name: "Master of Finance (MFin)",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£53,000 total program fee",
-                eligibility: "Strong quantitative Bachelor's degree + 2 years finance experience + IELTS 7.5."
-            },
-            {
-                name: "Cambridge MBA (Judge Business School)",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£69,000 total program fee",
-                eligibility: "Bachelor degree + 3 years work experience + GMAT 680+ + IELTS 7.5."
-            }
-        ]
-    },
-    "Imperial College London": {
-        location: "London , UK",
-        logo: "../images/universities/imperial.svg",
-        courses: [
-            {
-                name: "MBBS / BSc Medicine",
-                level: "Bachelor's / MD",
-                duration: "6 Years",
-                category: "Medicine and Surgery",
-                intake: "October",
-                fees: "£49,000 per year",
-                eligibility: "AAA (Biology & Chemistry) + UCAT + IELTS 7.0."
-            },
-            {
-                name: "BSc Biomedical Science",
-                level: "Bachelor's",
-                duration: "3 Years",
-                category: "Biomedical Sciences",
-                intake: "October",
-                fees: "£36,500 per year",
-                eligibility: "AAA (Biology and Chemistry/Maths) + IELTS 7.0."
-            },
-            {
-                name: "BEng / MEng Computing (AI & Machine Learning)",
-                level: "Bachelor's / Master's",
-                duration: "3-4 Years",
-                category: "Computer Science",
-                intake: "October",
-                fees: "£37,900 per year",
-                eligibility: "A*A*A in Mathematics + STEP assessment + IELTS 7.0."
-            },
-            {
-                name: "BEng / MEng Mechanical Engineering",
-                level: "Bachelor's / Master's",
-                duration: "4 Years",
-                category: "Engineering",
-                intake: "October",
-                fees: "£37,900 per year",
-                eligibility: "A*A*A with Math & Physics + IELTS 7.0."
-            },
-            {
-                name: "MSc Business Analytics & Big Data",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£39,800 per year",
-                eligibility: "First or Upper Second Class degree in quantitative discipline + IELTS 7.0."
-            },
-            {
-                name: "Imperial Full-Time MBA",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£61,500 total program fee",
-                eligibility: "Bachelor degree + 3 years professional work experience + IELTS 7.0."
-            }
-        ]
-    },
-    "King's College London": {
-        location: "London , UK",
-        logo: "../images/universities/cardiff.svg",
-        courses: [
-            {
-                name: "MBBS Medicine (King's Medical School)",
-                level: "Bachelor's",
-                duration: "5-6 Years",
-                category: "Medicine and Surgery",
-                intake: "September",
-                fees: "£45,000 per year",
-                eligibility: "A*AA (Biology & Chemistry) + UCAT + IELTS 7.0."
-            },
-            {
-                name: "BDS Dental Surgery",
-                level: "Bachelor's",
-                duration: "5 Years",
-                category: "Dentistry",
-                intake: "September",
-                fees: "£46,000 per year",
-                eligibility: "AAA (Biology & Chemistry) + UCAT + IELTS 7.0."
-            },
-            {
-                name: "BSc Nursing (Adult / Child)",
-                level: "Bachelor's",
-                duration: "3 Years",
-                category: "Nursing",
-                intake: "September",
-                fees: "£28,500 per year",
-                eligibility: "BBB at A-Level or 75%+ in High School + IELTS 7.0."
-            },
-            {
-                name: "MSc Data Science & AI",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Computer Science",
-                intake: "September",
-                fees: "£31,500 per year",
-                eligibility: "Bachelor in computer science, mathematics or physics with 65%+ + IELTS 6.5."
-            },
-            {
-                name: "MSc International Management",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£33,500 per year",
-                eligibility: "Bachelor degree in business, economics or social science + IELTS 7.0."
-            }
-        ]
-    },
-    "University of Manchester": {
-        location: "Manchester , UK",
-        logo: "../images/universities/oxford.svg",
-        courses: [
-            {
-                name: "MBChB Medicine & Surgery",
-                level: "Bachelor's",
-                duration: "5-6 Years",
-                category: "Medicine and Surgery",
-                intake: "September",
-                fees: "£38,000 per year",
-                eligibility: "AAA with Chemistry and Biology + UCAT + IELTS 7.0."
-            },
-            {
-                name: "BSc Computer Science",
-                level: "Bachelor's",
-                duration: "3 Years",
-                category: "Computer Science",
-                intake: "September",
-                fees: "£30,000 per year",
-                eligibility: "A*AA with Mathematics + IELTS 6.5."
-            },
-            {
-                name: "MSc Advanced Mechanical Engineering Design",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Engineering",
-                intake: "September",
-                fees: "£29,500 per year",
-                eligibility: "Bachelor in Mechanical Engineering with 60%+ + IELTS 6.5."
-            },
-            {
-                name: "Manchester Alliance MBA",
-                level: "Master's",
-                duration: "1 Year",
-                category: "Business",
-                intake: "September",
-                fees: "£48,000 total program fee",
-                eligibility: "Bachelor degree + 3 years work experience + GMAT/GRE + IELTS 6.5."
             }
         ]
     }
@@ -1291,9 +1007,13 @@ function renderCards() {
     const headingEl = document.getElementById("pageMainHeading");
 
     if (courseFilter === "MBBS ( Medicine and Surgery )") {
-        headingEl.textContent = "MBBS in UK";
+        headingEl.textContent = "MBBS & Medicine in UK";
+    } else if (courseFilter === "Computer Science") {
+        headingEl.textContent = "Computer Science & AI in UK";
+    } else if (courseFilter === "Business") {
+        headingEl.textContent = "Business & MBA Programs in UK";
     } else if (courseFilter === "ALL") {
-        headingEl.textContent = "Study in UK - All Courses & Top Universities";
+        headingEl.textContent = "Study in UK - Top Universities & Programs";
     } else {
         headingEl.textContent = `${courseFilter} in UK`;
     }
@@ -1312,19 +1032,11 @@ function renderCards() {
         if (courseFilter !== "ALL") {
             matchingCourses = uni.courses.filter(c => {
                 if (courseFilter === "MBBS ( Medicine and Surgery )") {
-                    return c.name.toLowerCase().includes("mbbs") || c.name.toLowerCase().includes("medicine") || c.name.toLowerCase().includes("mbchb") || c.name.toLowerCase().includes("bm bch");
-                } else if (courseFilter === "Biomedical Sciences") {
-                    return c.name.toLowerCase().includes("biomedical") || c.name.toLowerCase().includes("global health") || c.name.toLowerCase().includes("pharmacology");
-                } else if (courseFilter === "Dentistry") {
-                    return c.name.toLowerCase().includes("dent") || c.name.toLowerCase().includes("bds");
-                } else if (courseFilter === "Nursing") {
-                    return c.name.toLowerCase().includes("nurs") || c.name.toLowerCase().includes("health");
+                    return c.name.toLowerCase().includes("mbbs") || c.name.toLowerCase().includes("medicine") || c.name.toLowerCase().includes("bm bch");
                 } else if (courseFilter === "Computer Science") {
-                    return c.name.toLowerCase().includes("computer") || c.name.toLowerCase().includes("data") || c.name.toLowerCase().includes("computing");
-                } else if (courseFilter === "Engineering") {
-                    return c.name.toLowerCase().includes("engineering");
+                    return c.name.toLowerCase().includes("computer") || c.name.toLowerCase().includes("computing") || c.name.toLowerCase().includes("data");
                 } else if (courseFilter === "Business") {
-                    return c.name.toLowerCase().includes("mba") || c.name.toLowerCase().includes("business") || c.name.toLowerCase().includes("finance") || c.name.toLowerCase().includes("management");
+                    return c.name.toLowerCase().includes("mba") || c.name.toLowerCase().includes("business") || c.name.toLowerCase().includes("finance");
                 }
                 return true;
             });
@@ -1332,42 +1044,41 @@ function renderCards() {
 
         if (matchingCourses.length === 0) return;
 
-        const coursesToRender = (courseFilter === "ALL") ? matchingCourses : [matchingCourses[0]];
+        // Render matching course card
+        const course = matchingCourses[0];
+        matchCount++;
 
-        coursesToRender.forEach(course => {
-            matchCount++;
-            cardsHtml += `
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="uni-card-exact">
-                        <div>
-                            <div class="uni-card-logo-container">
-                                <img src="${uni.logo}" alt="${uniName}" style="max-height: 90px; width: auto; object-fit: contain;">
-                            </div>
-                            <h3 class="uni-name-exact">${uniName}</h3>
-                            <p class="uni-location-exact">${uni.location}</p>
-                            <div class="uni-stars-exact">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                            <div class="uni-divider-exact"></div>
-                            <h4 class="course-name-exact">${course.name}</h4>
-                            <div class="course-meta-exact">
-                                <div><strong>Course Level:</strong> ${course.level || "Bachelor's"}</div>
-                                <div><strong>Course Duration:</strong> ${course.duration}</div>
-                            </div>
+        cardsHtml += `
+            <div class="col-lg-4 col-md-6 mb-30">
+                <div class="uni-card-exact">
+                    <div>
+                        <div class="uni-card-logo-container">
+                            <img src="${uni.logo}" alt="${uniName}" style="max-height: 90px; width: auto; object-fit: contain;">
                         </div>
-                        <div>
-                            <div class="card-buttons-exact">
-                                <button type="button" class="btn-exact-view" onclick="openUniModal('${uniName}')">
-                                    <i class="fas fa-eye"></i> View courses
-                                </button>
-                                <button type="button" class="btn-exact-apply" onclick="openApplyNow('${uniName}', '${course.name}')">
-                                    Apply Now
-                                </button>
-                            </div>
-                            <div class="tag-badge-exact">${course.category || "General"}</div>
+                        <h3 class="uni-name-exact">${uniName}</h3>
+                        <p class="uni-location-exact">${uni.location}</p>
+                        <div class="uni-stars-exact">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <div class="uni-divider-exact"></div>
+                        <h4 class="course-name-exact">${course.name}</h4>
+                        <div class="course-meta-exact">
+                            <div><strong>Course Level:</strong> ${course.level || "Bachelor's"}</div>
+                            <div><strong>Course Duration:</strong> ${course.duration}</div>
                         </div>
                     </div>
+                    <div>
+                        <div class="card-buttons-exact">
+                            <button type="button" class="btn-exact-view" onclick="openUniModal('${uniName}')">
+                                <i class="fas fa-eye"></i> View courses
+                            </button>
+                            <button type="button" class="btn-exact-apply" onclick="openApplyNow('${uniName}', '${course.name}')">
+                                Apply Now
+                            </button>
+                        </div>
+                        <div class="tag-badge-exact">${course.category || "General"}</div>
+                    </div>
                 </div>
-            `;
-        });
+            </div>
+        `;
     });
 
     if (matchCount === 0) {
@@ -1383,7 +1094,7 @@ function renderCards() {
 }
 
 function resetFilters() {
-    document.getElementById("filterCourseSelect").value = "MBBS ( Medicine and Surgery )";
+    document.getElementById("filterCourseSelect").value = "ALL";
     document.getElementById("filterUniSelect").value = "ALL";
     renderCards();
 }
@@ -1448,8 +1159,8 @@ function openApplyFromModal(uniName, courseName) {
 }
 
 function openApplyNow(uniName, courseName) {
-    document.getElementById("quickApplyUni").value = uniName || "UK Medical Universities";
-    document.getElementById("quickApplyCourse").value = courseName || "MBBS (Medicine and Surgery)";
+    document.getElementById("quickApplyUni").value = uniName || "UK Universities";
+    document.getElementById("quickApplyCourse").value = courseName || "Undergraduate / Postgraduate Program";
     openCustomModal("quickApplyModal");
 }
 
@@ -1466,7 +1177,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     renderCards();
 
-    // Close modal on Escape key
     document.addEventListener("keydown", function(e) {
         if (e.key === "Escape") {
             closeCustomModal("viewCoursesModal");

@@ -1,0 +1,5 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 100" width="200" height="85">
+  <rect width="240" height="100" rx="6" fill="#ED1B2F"/>
+  <text x="120" y="44" fill="#ffffff" font-family="'Times New Roman', Georgia, serif" font-size="26" font-weight="bold" text-anchor="middle" letter-spacing="1.5">McGill</text>
+  <text x="120" y="74" fill="#ffffff" font-family="'Times New Roman', Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="2">UNIVERSITY</text>
+</svg>
