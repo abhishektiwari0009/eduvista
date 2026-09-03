@@ -1,59 +1,58 @@
-/* global jQuery */
-/* global document */
+/* ==========================================================================
+   EduVista - Responsive Navigation Menu Controller
+   ========================================================================== */
 
-jQuery(function () {
+(function($) {
   'use strict';
 
-  document.addEventListener("touchstart", function () { }, false);
-  jQuery(function () {
+  $(document).ready(function() {
+    
+    // Ensure overlay element exists
+    if ($('.overlapblackbg').length === 0) {
+      $('<div class="overlapblackbg"></div>').prependTo('.wsmenu');
+    }
 
-    jQuery('body').wrapInner('<div class="wsmenucontainer" />');
-    jQuery('<div class="overlapblackbg"></div>').prependTo('.wsmenu');
-
-    jQuery('#wsnavtoggle').click(function () {
-      jQuery('body').toggleClass('wsactive');
+    // Toggle Mobile Navigation Drawer
+    $(document).on('click', '#wsnavtoggle, .wsanimated-arrow', function(e) {
+      e.preventDefault();
+      $('body').toggleClass('wsactive');
     });
 
-    jQuery('.overlapblackbg').click(function () {
-      jQuery("body").removeClass('wsactive');
+    // Close Mobile Drawer when clicking dark backdrop overlay
+    $(document).on('click', '.overlapblackbg', function(e) {
+      e.preventDefault();
+      $('body').removeClass('wsactive');
     });
 
-    jQuery('.wsmenu > .wsmenu-list > li').has('.sub-menu').prepend('<span class="wsmenu-click"><i class="wsmenu-arrow"></i></span>');
-    jQuery('.wsmenu > .wsmenu-list > li').has('.wsmegamenu').prepend('<span class="wsmenu-click"><i class="wsmenu-arrow"></i></span>');
-
-    jQuery('.wsmenu-click').click(function () {
-      jQuery(this).toggleClass('ws-activearrow')
-        .parent().siblings().children().removeClass('ws-activearrow');
-      jQuery(".wsmenu > .wsmenu-list > li > .sub-menu, .wsmegamenu").not(jQuery(this).siblings('.wsmenu > .wsmenu-list > li > .sub-menu, .wsmegamenu')).slideUp('slow');
-      jQuery(this).siblings('.sub-menu').slideToggle('slow');
-      jQuery(this).siblings('.wsmegamenu').slideToggle('slow');
-    });
-
-    jQuery('.wsmenu > .wsmenu-list > li > ul > li').has('.sub-menu').prepend('<span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span>');
-    jQuery('.wsmenu > .wsmenu-list > li > ul > li > ul > li').has('.sub-menu').prepend('<span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span>');
-
-    jQuery('.wsmenu-click02').click(function () {
-      jQuery(this).children('.wsmenu-arrow').toggleClass('wsmenu-rotate');
-      jQuery(this).siblings('li > .sub-menu').slideToggle('slow');
-    });
-
-    jQuery(window).on('resize', function () {
-
-      if (jQuery(window).outerWidth() < 992) {
-        jQuery('.wsmenu').css('height', jQuery(this).height() + "px");
-        jQuery('.wsmenucontainer').css('min-width', jQuery(this).width() + "px");
-      } else {
-        jQuery('.wsmenu').removeAttr("style");
-        jQuery('.wsmenucontainer').removeAttr("style");
-        jQuery('body').removeClass("wsactive");
-        jQuery('.wsmenu > .wsmenu-list > li > .wsmegamenu, .wsmenu > .wsmenu-list > li > ul.sub-menu, .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu, .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu').removeAttr("style");
-        jQuery('.wsmenu-click').removeClass("ws-activearrow");
-        jQuery('.wsmenu-click02 > i').removeClass("wsmenu-rotate");
+    // Close Mobile Drawer when clicking any direct link (except dropdown toggles)
+    $(document).on('click', '.wsmenu > a:not(.wsmenu-dropdown-toggle), .wsmenu-dropdown-menu a', function() {
+      if ($(window).width() < 992) {
+        $('body').removeClass('wsactive');
       }
-
     });
 
-    jQuery(window).trigger('resize');
+    // Mobile Accordion Toggle for Countries Dropdown
+    $(document).on('click', '.wsmenu-dropdown > a', function(e) {
+      if ($(window).width() < 992) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $dropdown = $(this).closest('.wsmenu-dropdown');
+        $dropdown.toggleClass('is-open');
+        $dropdown.find('.wsmenu-dropdown-menu').slideToggle(250);
+        $(this).find('i.fa-chevron-down, i.fa-chevron-up').toggleClass('fa-chevron-down fa-chevron-up');
+      }
+    });
+
+    // Window Resize Handler
+    $(window).on('resize orientationchange', function() {
+      if ($(window).width() >= 992) {
+        $('body').removeClass('wsactive');
+        $('.wsmenu-dropdown').removeClass('is-open');
+        $('.wsmenu-dropdown-menu').removeAttr('style');
+        $('.wsmenu-dropdown > a i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      }
+    });
 
   });
-}());
+
+})(jQuery);

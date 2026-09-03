@@ -6400,3 +6400,172 @@
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+
+/* ==============================================================================
+   EduVista - Comprehensive Global Responsive System (All Devices)
+   ============================================================================== */
+
+/* Fluid Images & Media */
+img, video, iframe {
+  max-width: 100% !important;
+  height: auto;
+}
+
+/* Prevent Horizontal Body Scrolling */
+html, body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* Tablet & Mobile Breakpoints (max-width: 991.95px) */
+@media (max-width: 991.95px) {
+  
+  /* Container Padding */
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Hero Slider Sizing */
+  #hero-2 .caption-txt {
+    padding: 20px 0 !important;
+  }
+  #hero-2 .caption-txt h3 {
+    font-size: 18px !important;
+    margin-bottom: 6px !important;
+  }
+  #hero-2 .caption-txt h2 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+  }
+  #hero-2 .caption-txt h4 {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Section Headings */
+  .section-title h2,
+  .section-title h3 {
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Filter Section Box in Country Pages */
+  .filter-section-box {
+    padding: 18px 16px !important;
+    margin-bottom: 25px !important;
+  }
+  .filter-select {
+    font-size: 13.5px !important;
+    height: 46px !important;
+  }
+
+  /* University Cards Grid */
+  .uni-card-exact {
+    margin-bottom: 25px !important;
+  }
+
+  /* Pure CSS Modal Responsiveness */
+  .edu-custom-modal-overlay {
+    padding: 15px 10px !important;
+  }
+  .edu-custom-modal-container {
+    width: 96% !important;
+    max-width: 96% !important;
+    border-radius: 10px !important;
+  }
+  .edu-modal-header {
+    padding: 14px 18px !important;
+  }
+  .edu-modal-title {
+    font-size: 17px !important;
+  }
+  .edu-modal-body {
+    padding: 16px !important;
+    max-height: 75vh !important;
+  }
+  .modal-course-item {
+    padding: 14px 14px !important;
+  }
+  .modal-course-item .course-specs {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    padding: 8px 10px !important;
+  }
+
+  /* Footer Columns */
+  .footer-info,
+  .footer-links,
+  .footer-form {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* Small Smartphone Breakpoints (max-width: 575.95px) */
+@media (max-width: 575.95px) {
+  
+  /* Container Padding on small screens */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Hero Slider on Phones */
+  #hero-2 {
+    min-height: 380px !important;
+  }
+  #hero-2 .slider,
+  #hero-2 .slider .slides,
+  #hero-2 .slider .slides li {
+    height: auto !important;
+    min-height: 380px !important;
+  }
+  #hero-2 .caption-txt h3 {
+    font-size: 15px !important;
+  }
+  #hero-2 .caption-txt h2 {
+    font-size: 24px !important;
+    margin-bottom: 8px !important;
+  }
+  #hero-2 .caption-txt h4 {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* University Cards */
+  .uni-card-exact {
+    padding: 20px 15px !important;
+  }
+  .uni-name-exact {
+    font-size: 16px !important;
+  }
+  .course-name-exact {
+    font-size: 14.5px !important;
+  }
+  .card-buttons-exact {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  .btn-exact-view,
+  .btn-exact-apply {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* Form Inputs on Phones */
+  .form-control,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 16px !important; /* Prevents iOS auto-zoom */
+  }
+
+  /* Call-to-action buttons */
+  .btn {
+    font-size: 14px !important;
+  }
+}

@@ -53,313 +53,286 @@
     <link href="../css/teal.css" rel="alternate stylesheet" title="teal-theme"> 
     <link href="../css/yellow.css" rel="alternate stylesheet" title="yellow-theme">
         
-    <style id="embeddedUniCardsCss">
+    
 
-    /* ==========================================================================
-       EduVista - University & Course Card Grid Styles
-       ========================================================================== */
-    .country-hero-banner {
-        background: #111827 !important;
-        color: #ffffff !important;
-        padding: 20px 24px !important;
-        border-radius: 10px !important;
-        margin-bottom: 25px !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    
+    <style id="exactCardStyles">
+    .filter-section-box {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 24px 28px;
+        margin-bottom: 35px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     }
-    .country-hero-banner h2 {
-        font-size: 22px !important;
-        font-weight: 700 !important;
-        margin: 0 !important;
-        color: #ffffff !important;
-        display: flex !important;
-        align-items: center !important;
+    .filter-label {
+        font-size: 14.5px;
+        font-weight: 700;
+        color: #0b1f3a;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
-    .country-hero-banner .btn-top-apply {
-        background: #007bff !important;
-        color: #ffffff !important;
-        font-size: 14px !important;
-        font-weight: 700 !important;
-        padding: 9px 24px !important;
-        border-radius: 6px !important;
-        border: none !important;
-        transition: all 0.25s ease !important;
-        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3) !important;
-        cursor: pointer !important;
-        text-decoration: none !important;
-        display: inline-block !important;
+    .filter-label i {
+        color: #007bff;
+        font-size: 16px;
     }
-    .country-hero-banner .btn-top-apply:hover {
-        background: #0062cc !important;
-        color: #ffffff !important;
-        transform: translateY(-2px) !important;
-    }
-    .course-filter-bar {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 8px !important;
-        margin-bottom: 25px !important;
-        align-items: center !important;
-    }
-    .course-filter-btn {
+    .filter-select {
+        height: 48px !important;
         background: #ffffff !important;
-        color: #4b5563 !important;
-        border: 1px solid #d1d5db !important;
-        border-radius: 20px !important;
-        padding: 6px 16px !important;
-        font-size: 13px !important;
+        border: 1px solid #ced4da !important;
+        border-radius: 8px !important;
         font-weight: 600 !important;
+        color: #0b1f3a !important;
+        font-size: 14.5px !important;
         cursor: pointer !important;
-        transition: all 0.2s ease !important;
-        outline: none !important;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.03) !important;
     }
-    .course-filter-btn:hover,
-    .course-filter-btn.active {
-        background: #007bff !important;
-        color: #ffffff !important;
+    .filter-select:focus {
         border-color: #007bff !important;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.2) !important;
     }
-    .uni-cards-grid {
-        display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
-        gap: 22px !important;
-        margin-bottom: 40px !important;
-    }
-    .uni-card {
+    .uni-card-exact {
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
         border-radius: 12px !important;
-        padding: 24px 20px 20px 20px !important;
+        padding: 26px 22px 22px 22px !important;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
-        transition: transform 0.25s ease, box-shadow 0.25s ease !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
-        position: relative !important;
+        height: 100% !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
     }
-    .uni-card:hover {
+    .uni-card-exact:hover {
         transform: translateY(-4px) !important;
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09) !important;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1) !important;
         border-color: #cbd5e1 !important;
     }
-    .uni-card-logo-box {
-        height: 85px !important;
+    .uni-card-logo-container {
+        height: 95px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        margin-bottom: 12px !important;
-        padding: 4px 8px !important;
+        margin-bottom: 14px !important;
     }
-    .uni-card-title {
-        font-size: 17px !important;
+    .uni-name-exact {
+        font-size: 18px !important;
         font-weight: 700 !important;
         color: #0b1f3a !important;
         text-align: center !important;
-        margin: 0 0 3px 0 !important;
-        line-height: 1.3 !important;
+        margin: 0 0 4px 0 !important;
+        line-height: 1.25 !important;
     }
-    .uni-card-location {
-        font-size: 13px !important;
+    .uni-location-exact {
+        font-size: 13.5px !important;
         color: #64748b !important;
         text-align: center !important;
-        margin-bottom: 6px !important;
+        margin: 0 0 8px 0 !important;
     }
-    .uni-card-rating {
+    .uni-stars-exact {
         text-align: center !important;
         color: #f59e0b !important;
-        font-size: 16px !important;
-        margin-bottom: 12px !important;
-        letter-spacing: 2px !important;
+        font-size: 18px !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 14px !important;
     }
-    .uni-card-divider {
+    .uni-divider-exact {
         height: 2px !important;
         background: #007bff !important;
-        margin: 0 0 14px 0 !important;
+        margin: 0 -4px 14px -4px !important;
         border-radius: 2px !important;
     }
-    .uni-card-course-title {
-        font-size: 15px !important;
+    .course-name-exact {
+        font-size: 16px !important;
         font-weight: 700 !important;
         color: #0f172a !important;
         text-align: center !important;
-        margin-bottom: 12px !important;
+        margin: 0 0 12px 0 !important;
         line-height: 1.35 !important;
-        min-height: 42px !important;
+        min-height: 44px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
     }
-    .uni-card-meta {
-        font-size: 13px !important;
-        color: #334155 !important;
+    .course-meta-exact {
+        font-size: 13.5px !important;
+        color: #475569 !important;
         text-align: center !important;
         margin-bottom: 16px !important;
         line-height: 1.6 !important;
     }
-    .uni-card-meta strong {
+    .course-meta-exact strong {
         color: #0f172a !important;
+        font-weight: 700 !important;
     }
-    .uni-card-actions {
+    .card-buttons-exact {
         display: flex !important;
         gap: 8px !important;
-        margin-bottom: 14px !important;
+        margin-bottom: 16px !important;
     }
-    .uni-card-actions .btn-view-courses {
+    .btn-exact-view {
         flex: 1 !important;
         background: #007bff !important;
         color: #ffffff !important;
-        font-size: 12.5px !important;
+        font-size: 13px !important;
         font-weight: 600 !important;
-        padding: 8px 10px !important;
+        padding: 9px 10px !important;
         border-radius: 6px !important;
         border: none !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 5px !important;
-        text-decoration: none !important;
-        transition: background 0.2s ease !important;
+        gap: 6px !important;
         cursor: pointer !important;
+        transition: background 0.2s ease !important;
         outline: none !important;
+        text-decoration: none !important;
     }
-    .uni-card-actions .btn-view-courses:hover {
+    .btn-exact-view:hover {
         background: #0062cc !important;
         color: #ffffff !important;
         text-decoration: none !important;
     }
-    .uni-card-actions .btn-apply {
+    .btn-exact-apply {
         flex: 1 !important;
         background: #007bff !important;
         color: #ffffff !important;
-        font-size: 12.5px !important;
+        font-size: 13px !important;
         font-weight: 600 !important;
-        padding: 8px 10px !important;
+        padding: 9px 10px !important;
         border-radius: 6px !important;
         border: none !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        text-decoration: none !important;
-        transition: background 0.2s ease !important;
         cursor: pointer !important;
+        transition: background 0.2s ease !important;
         outline: none !important;
+        text-decoration: none !important;
     }
-    .uni-card-actions .btn-apply:hover {
+    .btn-exact-apply:hover {
         background: #0062cc !important;
         color: #ffffff !important;
         text-decoration: none !important;
     }
-    .uni-card-badge {
+    .tag-badge-exact {
         align-self: flex-start !important;
         background: #f1f5f9 !important;
         color: #475569 !important;
-        border: 1px solid #cbd5e1 !important;
+        border: 1px solid #e2e8f0 !important;
         border-radius: 4px !important;
         padding: 3px 8px !important;
         font-size: 11.5px !important;
         font-weight: 500 !important;
         display: inline-block !important;
     }
-    .floating-side-actions {
-        position: fixed !important;
-        right: 0 !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        z-index: 1050 !important;
+
+    .edu-custom-modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(15, 23, 42, 0.7);
+        backdrop-filter: blur(3px);
+        z-index: 999999;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 20px 15px;
+    }
+    .edu-custom-modal-overlay.is-open {
         display: flex !important;
-        flex-direction: column !important;
-        gap: 6px !important;
+        align-items: center;
+        justify-content: center;
     }
-    .floating-action-btn {
-        background: #ffffff !important;
-        color: #111827 !important;
-        border: 1px solid #d1d5db !important;
-        border-right: none !important;
-        box-shadow: -2px 4px 12px rgba(0, 0, 0, 0.12) !important;
-        padding: 10px 8px !important;
-        border-top-left-radius: 8px !important;
-        border-bottom-left-radius: 8px !important;
-        cursor: pointer !important;
-        text-align: center !important;
-        font-size: 11px !important;
-        font-weight: 700 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 62px !important;
-        transition: all 0.2s ease !important;
-        text-decoration: none !important;
+    .edu-custom-modal-container {
+        background: #ffffff;
+        border-radius: 14px;
+        width: 100%;
+        max-width: 820px;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+        animation: modalFadeIn 0.25s ease-out;
+        margin: auto;
+        border: 1px solid #e2e8f0;
     }
-    .floating-action-btn i {
-        font-size: 16px !important;
-        margin-bottom: 4px !important;
-        color: #007bff !important;
+    @keyframes modalFadeIn {
+        from { transform: scale(0.96) translateY(-15px); opacity: 0; }
+        to { transform: scale(1) translateY(0); opacity: 1; }
     }
-    .floating-action-btn:hover {
-        background: #007bff !important;
-        color: #ffffff !important;
-        transform: translateX(-4px) !important;
-        text-decoration: none !important;
+    .edu-modal-header {
+        background: #0b1f3a;
+        color: #ffffff;
+        padding: 18px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .floating-action-btn:hover i {
-        color: #ffffff !important;
+    .edu-modal-title { font-size: 20px; font-weight: 700; color: #ffffff; margin: 0; }
+    .edu-modal-close {
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 1;
+        cursor: pointer;
+        opacity: 0.85;
+        padding: 0;
+    }
+    .edu-modal-close:hover { opacity: 1; color: #ff4500; }
+    .edu-modal-body {
+        padding: 24px;
+        max-height: 72vh;
+        overflow-y: auto;
+        background: #ffffff;
     }
     .modal-course-item {
         background: #f8fafc !important;
         border: 1px solid #e2e8f0 !important;
-        border-radius: 8px !important;
-        padding: 16px !important;
-        margin-bottom: 14px !important;
-        transition: border-color 0.2s ease !important;
-    }
-    .modal-course-item:hover {
-        border-color: #007bff !important;
+        border-radius: 10px !important;
+        padding: 18px 20px !important;
+        margin-bottom: 18px !important;
     }
     .modal-course-item h5 {
-        font-size: 16px !important;
+        font-size: 17px !important;
         font-weight: 700 !important;
-        color: #0f172a !important;
-        margin-bottom: 8px !important;
+        color: #0b1f3a !important;
+        margin: 0 !important;
     }
     .modal-course-item .course-specs {
         display: grid !important;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
-        gap: 8px !important;
-        font-size: 13px !important;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) !important;
+        gap: 10px !important;
+        font-size: 13.5px !important;
         color: #475569 !important;
-        margin-bottom: 10px !important;
-    }
-    .modal-course-item .course-specs strong {
-        color: #1e293b !important;
-    }
-    .modal-course-item .eligibility-text {
-        font-size: 12.5px !important;
-        color: #64748b !important;
+        margin: 12px 0 !important;
         background: #ffffff !important;
-        padding: 8px 12px !important;
+        padding: 10px 14px !important;
+        border-radius: 6px !important;
+        border: 1px solid #edf2f7 !important;
+    }
+    .modal-course-item .course-specs strong { color: #1e293b !important; }
+    .modal-course-item .eligibility-text {
+        font-size: 13px !important;
+        color: #334155 !important;
+        background: #ffffff !important;
+        padding: 10px 14px !important;
         border-radius: 6px !important;
         border: 1px dashed #cbd5e1 !important;
+        line-height: 1.6 !important;
     }
-    @media (max-width: 768px) {
-        .uni-cards-grid {
-            grid-template-columns: 1fr !important;
-        }
-        .country-hero-banner .d-flex {
-            flex-direction: column !important;
-            align-items: flex-start !important;
-            gap: 12px !important;
-        }
-        .floating-side-actions {
-            width: 52px !important;
-        }
-        .floating-action-btn {
-            width: 52px !important;
-            font-size: 10px !important;
-            padding: 6px 4px !important;
-        }
+    .edu-modal-footer {
+        background: #f8fafc;
+        padding: 14px 24px;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: flex-end;
     }
+    </style>
 
-</style>
 
     <!-- RESPONSIVE CSS -->
     <link href="../css/responsive.css" rel="stylesheet"> 
@@ -532,232 +505,54 @@
                     </div>        
                 </div>
 
-                <!-- HERO BANNER / TOP BAR -->
-                <div class="country-hero-banner">
+                <!-- SINGAPORE STUDY & UNIVERSITY SECTION WITH COURSE & UNIVERSITY SELECT -->
+                <section style="background: #ffffff; padding: 45px 0 70px 0; min-height: 80vh;">
                     <div class="container">
-                        <div class="d-flex justify-content-between align-items-center flex-wrap" style="gap: 15px;">
-                            <h2 id="categoryHeading" class="m-0 text-white" style="font-size: 22px; font-weight: 700;">
-                                <i class="fas fa-graduation-cap mr-2" style="color: #007bff;"></i> Study in Singapore - Top Universities & Programs
-                            </h2>
-                            <a href="javascript:void(0)" id="topApplyBtn" class="btn-top-apply">Apply Now</a>
+                        
+                        <!-- Header: Title -->
+                        <div class="mb-30" style="border-bottom: 2px solid #eef2f5; padding-bottom: 16px;">
+                            <h1 id="pageMainHeading" class="m-0 darkblue-color font-weight-bold" style="font-size: 28px; color: #0b1f3a; letter-spacing: -0.5px;">Study in Singapore</h1>
                         </div>
-                    </div>
-                </div>
 
-
-                <!-- COUNTRY DETAILS CONTENT -->
-                <section class="wide-60 division country-details-section">
-                    <div class="container">
-                        <div class="row">
-                            
-                            <!-- Left Column: Primary Country Details -->
-                            <div class="col-lg-8 mb-40">
-                                
-                                <!-- 1. Country -->
-                                <div class="card-section">
-                                    <h3>1. Country Overview</h3>
-                                    <p class="p-md text-justify" style="line-height: 1.8; font-size: 1.05rem; color: #444; margin-bottom: 0;">
-                                        Singapore is a global financial and education hub in Asia, home to top-ranked universities such as NUS and NTU with exceptionally strong industry connections. Its safe, multicultural environment and reputation for academic excellence make it a top choice for students seeking a career launchpad in Asia.
-                                    </p>
+                        <!-- 1. COURSE SELECT & 2. UNIVERSITY SELECT FILTER BOX -->
+                        <div class="filter-section-box">
+                            <div class="row">
+                                <!-- First: 1. Course Select Option -->
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label class="filter-label" for="filterCourseSelect">
+                                        <i class="fas fa-book-open"></i> 1. Select Course / Program:
+                                    </label>
+                                    <select id="filterCourseSelect" class="form-control filter-select">
+                                        <option value="ALL" selected>All Courses &amp; Programs</option>
+                                        <option value="Computer Science">Computer Science, AI &amp; Software Engineering</option>
+                                        <option value="Medicine">Doctor of Medicine (MD / MBBS) &amp; Health Tech</option>
+                                        <option value="Business">Master of Business Administration (MBA) &amp; Finance</option>
+                                    </select>
                                 </div>
 
-                                <!-- Category / Subject Filter Bar -->
-                                <div class="mb-20">
-                                    <h4 class="h4-xs font-weight-bold darkblue-color mb-15" style="font-size: 18px;">
-                                        <i class="fas fa-university mr-2 text-primary" style="color: #007bff;"></i> Select Program / University
-                                    </h4>
-                                    <div id="courseFilterBar" class="course-filter-bar">
-                                        <!-- Dynamically Rendered Filter Buttons -->
-                                    </div>
+                                <!-- Second: 2. University & Schools Select Option -->
+                                <div class="col-md-6">
+                                    <label class="filter-label" for="filterUniSelect">
+                                        <i class="fas fa-university"></i> 2. Select University &amp; Colleges:
+                                    </label>
+                                    <select id="filterUniSelect" class="form-control filter-select">
+                                        <option value="ALL" selected>All Universities &amp; Colleges</option>
+                                        <option value="National University of Singapore (NUS)">National University of Singapore (NUS)</option>
+                                        <option value="Nanyang Technological University (NTU)">Nanyang Technological University (NTU)</option>
+                                        <option value="Singapore Management University (SMU)">Singapore Management University (SMU)</option>
+                                    </select>
                                 </div>
-
-                                <!-- Dynamic University & Course Card Grid -->
-                                <div id="universityCardsContainer" class="uni-cards-grid">
-                                    <!-- Dynamically Populated Cards matching design -->
-                                </div>
-
-                                <!-- Country-level Info Accordion -->
-                                <h5 class="h5-sm darkblue-color font-weight-bold mb-20">Additional Country Details</h5>
-                                <div id="countryAccordion" class="accordion mb-40">
-                                    
-                                    <!-- 8. Living Cost -->
-                                    <div class="card border-0 mb-10 shadow-sm" style="border-radius: 8px; overflow: hidden; border: 1px solid #eef2f5;">
-                                        <div class="card-header bg-white border-0 py-3" id="headingLiving">
-                                            <h5 class="m-0 font-weight-bold" style="font-size: 16px;">
-                                                <a class="darkblue-color d-flex justify-content-between align-items-center text-decoration-none" data-toggle="collapse" href="#collapseLiving" aria-expanded="true" aria-controls="collapseLiving">
-                                                    <span><i class="fas fa-wallet mr-2 primary-color" style="color: #ff4500;"></i>8. Cost of Living</span>
-                                                    <i class="fas fa-chevron-down toggle-icon" style="font-size: 12px; transition: transform 0.2s;"></i>
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseLiving" class="collapse show" aria-labelledby="headingLiving" data-parent="#countryAccordion">
-                                            <div class="card-body bg-light-gray" style="background: #f9fbfd; font-size: 15px; line-height: 1.8; color: #444; padding: 25px 30px;">
-                                                Estimated annual cost of living is &#8377;7,50,000 to &#8377;11,25,000, covering accommodation, food, local transport, and utilities.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 9. Accommodation -->
-                                    <div class="card border-0 mb-10 shadow-sm" style="border-radius: 8px; overflow: hidden; border: 1px solid #eef2f5;">
-                                        <div class="card-header bg-white border-0 py-3" id="headingAccommodation">
-                                            <h5 class="m-0 font-weight-bold" style="font-size: 16px;">
-                                                <a class="darkblue-color collapsed d-flex justify-content-between align-items-center text-decoration-none" data-toggle="collapse" href="#collapseAccommodation" aria-expanded="false" aria-controls="collapseAccommodation">
-                                                    <span><i class="fas fa-home mr-2 primary-color" style="color: #ff4500;"></i>9. Accommodation Options</span>
-                                                    <i class="fas fa-chevron-down toggle-icon" style="font-size: 12px; transition: transform 0.2s;"></i>
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseAccommodation" class="collapse" aria-labelledby="headingAccommodation" data-parent="#countryAccordion">
-                                            <div class="card-body bg-light-gray" style="background: #f9fbfd; font-size: 15px; line-height: 1.8; color: #444; padding: 25px 30px;">
-                                                Housing options: On-campus halls of residence (limited and competitive), off-campus condominiums or HDB flats shared with other students, and private student accommodations (PGs).
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 10. Student Visa Requirements -->
-                                    <div class="card border-0 mb-10 shadow-sm" style="border-radius: 8px; overflow: hidden; border: 1px solid #eef2f5;">
-                                        <div class="card-header bg-white border-0 py-3" id="headingVisa">
-                                            <h5 class="m-0 font-weight-bold" style="font-size: 16px;">
-                                                <a class="darkblue-color collapsed d-flex justify-content-between align-items-center text-decoration-none" data-toggle="collapse" href="#collapseVisa" aria-expanded="false" aria-controls="collapseVisa">
-                                                    <span><i class="fas fa-passport mr-2 primary-color" style="color: #ff4500;"></i>10. Student Visa Requirements</span>
-                                                    <i class="fas fa-chevron-down toggle-icon" style="font-size: 12px; transition: transform 0.2s;"></i>
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseVisa" class="collapse" aria-labelledby="headingVisa" data-parent="#countryAccordion">
-                                            <div class="card-body bg-light-gray" style="background: #f9fbfd; font-size: 15px; line-height: 1.8; color: #444; padding: 25px 30px;">
-                                                Requires a Student's Pass issued via the Immigration & Checkpoints Authority (ICA). Requirements: Admission from an approved institution, In-Principle Approval (IPA) letter, and proof of financial means.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 11. Work & PR Opportunities -->
-                                    <div class="card border-0 mb-10 shadow-sm" style="border-radius: 8px; overflow: hidden; border: 1px solid #eef2f5;">
-                                        <div class="card-header bg-white border-0 py-3" id="headingWork">
-                                            <h5 class="m-0 font-weight-bold" style="font-size: 16px;">
-                                                <a class="darkblue-color collapsed d-flex justify-content-between align-items-center text-decoration-none" data-toggle="collapse" href="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
-                                                    <span><i class="fas fa-briefcase mr-2 primary-color" style="color: #ff4500;"></i>11. Work &amp; PR Opportunities</span>
-                                                    <i class="fas fa-chevron-down toggle-icon" style="font-size: 12px; transition: transform 0.2s;"></i>
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseWork" class="collapse" aria-labelledby="headingWork" data-parent="#countryAccordion">
-                                            <div class="card-body bg-light-gray" style="background: #f9fbfd; font-size: 15px; line-height: 1.8; color: #444; padding: 25px 30px;">
-                                                Work rights: Part-time work of up to 16 hours per week is allowed during term (subject to conditions), and full-time during official vacation periods. PR Pathways: Post-study Work Holiday and Employment Pass options are available, with permanent residence achievable after a period of skilled employment.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Right Column: Sidebar Enquiry & Quick Facts -->
-                            <div class="col-lg-4">
-                                <aside class="sidebar">
-                                    
-                                    <!-- Quick Facts -->
-                                    <div class="quick-info-box">
-                                        <h4>Quick Study Facts</h4>
-                                        <div class="quick-info-item">
-                                            <i class="fas fa-clock"></i>
-                                            <div>
-                                                <strong>Intakes Available</strong>
-                                                Spring, Fall / Primary Intakes
-                                            </div>
-                                        </div>
-                                        <div class="quick-info-item">
-                                            <i class="fas fa-briefcase"></i>
-                                            <div>
-                                                <strong>Part-time Work</strong>
-                                                Allowed during study sessions
-                                            </div>
-                                        </div>
-                                        <div class="quick-info-item">
-                                            <i class="fas fa-history"></i>
-                                            <div>
-                                                <strong>Post-Study Work</strong>
-                                                Available for eligible graduates
-                                            </div>
-                                        </div>
-                                        <div class="quick-info-item">
-                                            <i class="fas fa-check-circle"></i>
-                                            <div>
-                                                <strong>Consultation</strong>
-                                                100% Free counseling &amp; pre-screening
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Scholarship Assistance -->
-                                    <div class="card-section mb-30" style="padding: 28px 30px;">
-                                        <h4 style="font-size: 17px; font-weight: 700; color: #0b1f3a; margin-bottom: 18px; display: flex; align-items: center;">
-                                            <i class="fas fa-graduation-cap mr-2" style="color: #ff4500;"></i>
-                                            <span style="background: #fff59d; padding: 3px 10px; border-radius: 4px;">Scholarship Assistance</span>
-                                        </h4>
-                                        <ul style="padding-left: 18px; margin-bottom: 18px; font-size: 14px; line-height: 1.9; color: #444;">
-                                            <li>Scholarship search and matching</li>
-                                            <li>Application support</li>
-                                            <li>Merit-based and need-based scholarship guidance</li>
-                                        </ul>
-                                        <!--
-                                        <a href="https://www.standyou.com/scholarships/" target="_blank" rel="noopener noreferrer" class="d-block text-center" style="background: #fff59d; color: #0b1f3a; font-weight: 700; padding: 12px 16px; border-radius: 8px; font-size: 13.5px; text-decoration: none;">
-                                            <i class="fas fa-external-link-alt mr-1"></i> Explore Scholarship Options
-                                        </a>
-                                        -->
-                                    </div>
-
-                                    <!-- Sidebar Form -->
-                                    <div class="enquiry-form-card p-4 rounded text-dark shadow bg-light"
-                                        style="border-radius: 12px; border: 1px solid #eef2f5; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
-                                        <h4 class="h4-xs darkblue-color mb-20 font-weight-bold" style="color: #152035; font-size: 1.4rem; font-weight: 700; border-bottom: 2px solid #ff4500; padding-bottom: 10px;">
-                                            Enquire Now
-                                        </h4>
-                                        <form id="enquiryForm" class="row">
-                                            <div class="col-md-12 mb-15">
-                                                <input type="text" id="enqName" class="form-control" placeholder="Your Full Name *" required style="height: 45px; background: #ffffff;">
-                                            </div>
-                                            <div class="col-md-12 mb-15">
-                                                <input type="email" id="enqEmail" class="form-control" placeholder="Email Address *" required style="height: 45px; background: #ffffff;">
-                                            </div>
-                                            <div class="col-md-12 mb-15">
-                                                <input type="tel" id="enqPhone" class="form-control" placeholder="Phone / WhatsApp *" required style="height: 45px; background: #ffffff;">
-                                            </div>
-                                            <div class="col-md-12 mb-15">
-                                                <select id="enqCountry" class="form-control" required style="height: 45px; background: #ffffff;">
-                                                    <option value="SINGAPORE" selected>Singapore</option>
-                                                    <option value="USA">USA</option>
-                                                    <option value="Canada">Canada</option>
-                                                    <option value="United Kingdom">United Kingdom</option>
-                                                    <option value="Australia">Australia</option>
-                                                    <option value="New Zealand">New Zealand</option>
-                                                    <option value="Germany">Germany</option>
-                                                    <option value="Sweden">Sweden</option>
-                                                    <option value="Denmark">Denmark</option>
-                                                    <option value="Netherlands">Netherlands</option>
-                                                    <option value="Ireland">Ireland</option>
-                                                    <option value="Other">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-12 mb-15">
-                                                <textarea id="enqMessage" class="form-control" rows="3" placeholder="Tell us about your educational background &amp; course interest..." style="background: #ffffff;"></textarea>
-                                            </div>
-                                            <div class="col-md-12 text-center mt-10">
-                                                <button type="submit" class="btn btn-primary btn-block py-2 font-weight-bold" style="height: 48px; font-size: 1rem;">Submit Enquiry</button>
-                                            </div>
-                                            <div class="col-md-12 mt-15">
-                                                <div id="enquiryAlert" class="alert alert-success d-none mb-0" role="alert">
-                                                    Thank you! Your enquiry has been submitted successfully and recorded.
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    
-                                </aside>
                             </div>
                         </div>
+
+                        <!-- Dynamic Cards Grid Container -->
+                        <div id="singaporeCardsGridContainer" class="row">
+                            <!-- Populated dynamically based on Course & University selection -->
+                        </div>
+
                     </div>
                 </section>
+
 
                 <!-- FOOTER -->
                 <footer id="footer-1" class="bg-blue-map wide-40 footer division">
@@ -968,190 +763,398 @@
     <!-- Custom Script for Interactive Dropdowns -->
     
 
-    <!-- UNIVERSITY DATA & CARD CONTROLLER -->
-    <script>
-        const countryName = "Singapore";
-        const uniData = [
-    {
-        "name": "National University of Singapore (NUS)",
+    
+
+
+
+
+<!-- VIEW COURSES CUSTOM MODAL -->
+<div id="viewCoursesModal" class="edu-custom-modal-overlay" onclick="handleOverlayClick(event, 'viewCoursesModal')">
+    <div class="edu-custom-modal-container">
+        <div class="edu-modal-header">
+            <div>
+                <h4 class="edu-modal-title" id="modalUniName">University Name</h4>
+                <span class="text-white-50 small" id="modalUniLocation"><i class="fas fa-map-marker-alt mr-1"></i> Location</span>
+            </div>
+            <button type="button" class="edu-modal-close" onclick="closeCustomModal('viewCoursesModal')" aria-label="Close">&times;</button>
+        </div>
+        <div class="edu-modal-body">
+            <h6 class="font-weight-bold text-dark mb-3" style="font-size: 15px;">All Available Courses &amp; Admission Requirements</h6>
+            <div id="modalCoursesList">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+        <div class="edu-modal-footer">
+            <button type="button" class="btn btn-secondary px-4 font-weight-bold" onclick="closeCustomModal('viewCoursesModal')" style="border-radius: 6px;">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- QUICK APPLY CUSTOM MODAL -->
+<div id="quickApplyModal" class="edu-custom-modal-overlay" onclick="handleOverlayClick(event, 'quickApplyModal')">
+    <div class="edu-custom-modal-container" style="max-width: 580px;">
+        <div class="edu-modal-header">
+            <h5 class="edu-modal-title"><i class="fas fa-paper-plane mr-2" style="color: #007bff;"></i> Apply Now</h5>
+            <button type="button" class="edu-modal-close" onclick="closeCustomModal('quickApplyModal')" aria-label="Close">&times;</button>
+        </div>
+        <div class="edu-modal-body p-4">
+            <p class="text-muted small mb-3">Fill out your details to receive expert guidance, admission assessment, and application support.</p>
+            <form id="quickModalForm">
+                <div class="form-group mb-3">
+                    <label class="font-weight-bold small text-dark">Selected University</label>
+                    <input type="text" id="quickApplyUni" class="form-control" readonly style="background: #f1f5f9; font-weight: 600;">
+                </div>
+                <div class="form-group mb-3">
+                    <label class="font-weight-bold small text-dark">Selected Course / Subject</label>
+                    <input type="text" id="quickApplyCourse" class="form-control" readonly style="background: #f1f5f9; font-weight: 600;">
+                </div>
+                <div class="form-group mb-3">
+                    <label class="font-weight-bold small text-dark">Full Name *</label>
+                    <input type="text" id="quickModalName" class="form-control" required placeholder="Enter your full name">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="font-weight-bold small text-dark">Email Address *</label>
+                        <input type="email" id="quickModalEmail" class="form-control" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label class="font-weight-bold small text-dark">Phone Number *</label>
+                        <input type="tel" id="quickModalPhone" class="form-control" required placeholder="+91 98765 43210">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block font-weight-bold py-2 mt-2" style="background: #007bff; border: none; border-radius: 6px; font-size: 15px;">Submit Application</button>
+                <div id="quickModalAlert" class="alert alert-success mt-3 d-none small">Application submitted successfully! Our counselor will contact you shortly.</div>
+            </form>
+        </div>
+        <div class="edu-modal-footer">
+            <button type="button" class="btn btn-secondary px-3" onclick="closeCustomModal('quickApplyModal')">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- INLINE DYNAMIC CARD & BULLETPROOF MODAL CONTROLLER -->
+<script>
+const singaporeUniversitiesData = {
+    "National University of Singapore (NUS)": {
         "location": "Singapore",
+        "logo": "../images/universities/nus.png",
         "courses": [
             {
-                "name": "MBBS (Yong Loo Lin School of Medicine)",
-                "level": "Bachelor's",
-                "duration": "5 Years",
-                "category": "Medicine and Surgery",
-                "intake": "August",
-                "fees": "SGD $65,000 per year (without grant)",
-                "eligibility": "Top High School grades in Chemistry & Biology + FSA & BMAT + IELTS 7.0."
+                "name": "Bachelor / Master of Computing (Computer Science & AI)",
+                "level": "Bachelor's / Master's",
+                "duration": "4 / 1.5 Years",
+                "category": "Computer Science",
+                "intake": "August (Fall)",
+                "fees": "SGD 38,000 - 52,000 / year (Top 10 Global CS School)",
+                "eligibility": "Top High School / Bachelor GPA (90%+) + SAT/GRE + IELTS 7.0 / TOEFL 100."
             },
             {
-                "name": "MSc Computer Science / AI",
+                "name": "The NUS MBA (NUS Business School)",
                 "level": "Master's",
                 "duration": "1.5 Years",
-                "category": "Engineering & IT",
-                "intake": "August & January",
-                "fees": "SGD $48,000 total program fee",
-                "eligibility": "Bachelors in CS or quantitative field with First Class + IELTS 6.5."
+                "category": "Business",
+                "intake": "August",
+                "fees": "SGD 98,000 total program fee (Ranked #1 MBA in Asia)",
+                "eligibility": "Bachelor degree + 2+ years work experience + GMAT 660+ / GRE + IELTS 7.0."
             },
             {
-                "name": "The NUS MBA",
-                "level": "Master's",
-                "duration": "17 Months",
-                "category": "Business & Management",
+                "name": "Duke-NUS Doctor of Medicine (MD Program)",
+                "level": "MD / Graduate",
+                "duration": "4 Years",
+                "category": "Medicine",
                 "intake": "August",
-                "fees": "SGD $87,000 total program fee",
-                "eligibility": "Undergraduate degree + GMAT (670+ avg) + 2+ yrs experience."
+                "fees": "SGD 65,000 / year (Joint with Duke University USA)",
+                "eligibility": "Bachelor's in Sciences + MCAT score + Multiple Interviews + IELTS 7.5."
             }
         ]
     },
-    {
-        "name": "Nanyang Technological University (NTU)",
+    "Nanyang Technological University (NTU)": {
         "location": "Singapore",
+        "logo": "../images/universities/ntu.png",
         "courses": [
             {
-                "name": "MSc Artificial Intelligence & Data Science",
-                "level": "Master's",
-                "duration": "1 Year",
-                "category": "Engineering & IT",
+                "name": "BEng / MSc in Artificial Intelligence & Data Science",
+                "level": "Bachelor's / Master's",
+                "duration": "4 / 1 Year",
+                "category": "Computer Science",
                 "intake": "August",
-                "fees": "SGD $52,000 total program fee",
-                "eligibility": "Bachelor degree in Computing / Math + IELTS 6.5."
+                "fees": "SGD 35,000 - 48,000 / year (World Top Engineering University)",
+                "eligibility": "High School 90%+ in Math & Physics / Bachelor with 80%+ & IELTS 6.5."
             },
             {
-                "name": "Nanyang MBA",
+                "name": "Nanyang MBA (Nanyang Business School)",
                 "level": "Master's",
                 "duration": "1 Year",
-                "category": "Business & Management",
-                "intake": "July",
-                "fees": "SGD $75,000 total program fee",
-                "eligibility": "Bachelor degree + GMAT/GRE + 2 years work experience."
+                "category": "Business",
+                "intake": "August",
+                "fees": "SGD 85,000 total program fee",
+                "eligibility": "Bachelor's degree + GMAT 650+ / GRE + 2+ years experience + IELTS 6.5."
+            },
+            {
+                "name": "Lee Kong Chian MBBS (Joint with Imperial College)",
+                "level": "Bachelor's / MBBS",
+                "duration": "5 Years",
+                "category": "Medicine",
+                "intake": "August",
+                "fees": "SGD 75,000 / year",
+                "eligibility": "Top High School Sciences + UCAT / BMAT + MMI Interview + IELTS 7.5."
             }
         ]
     },
-    {
-        "name": "Singapore Management University (SMU)",
+    "Singapore Management University (SMU)": {
         "location": "Singapore",
+        "logo": "../images/universities/smu.png",
         "courses": [
             {
-                "name": "Master of IT in Business (MITB)",
+                "name": "SMU MBA & Master in Management",
                 "level": "Master's",
                 "duration": "1 Year",
-                "category": "Business & Management",
-                "intake": "August & January",
-                "fees": "SGD $48,000 total program fee",
-                "eligibility": "Bachelor degree in Business/Computing + IELTS 6.5."
+                "category": "Business",
+                "intake": "January / August",
+                "fees": "SGD 72,000 total program fee",
+                "eligibility": "Bachelor degree in any field + GMAT/GRE + 2 years work experience + IELTS 7.0."
+            },
+            {
+                "name": "BSc / MSc in Information Systems & Fintech Analytics",
+                "level": "Bachelor's / Master's",
+                "duration": "4 / 1 Year",
+                "category": "Computer Science",
+                "intake": "August",
+                "fees": "SGD 44,000 / year",
+                "eligibility": "High School 85%+ with Math + IELTS 6.5."
+            },
+            {
+                "name": "MSc in Health Economics & Healthcare Management",
+                "level": "Master's",
+                "duration": "1 Year",
+                "category": "Medicine",
+                "intake": "August",
+                "fees": "SGD 48,000 total",
+                "eligibility": "Bachelor in Health/Business with 65%+ & IELTS 6.5."
             }
         ]
     }
-];
-    </script>
-    <script src="../js/university-cards.js"></script>
+};
 
+function renderCards() {
+    const courseFilter = document.getElementById("filterCourseSelect").value;
+    const uniFilter = document.getElementById("filterUniSelect").value;
+    const gridEl = document.getElementById("singaporeCardsGridContainer");
+    const headingEl = document.getElementById("pageMainHeading");
 
-<!-- VIEW COURSES MODAL -->
-<div class="modal fade" id="viewCoursesModal" tabindex="-1" role="dialog" aria-labelledby="modalUniName" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content" style="border-radius: 12px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-            <div class="modal-header bg-darkblue text-white" style="border-top-left-radius: 12px; border-top-right-radius: 12px; padding: 18px 24px;">
-                <div>
-                    <h4 class="modal-title font-weight-bold text-white mb-1" id="modalUniName" style="font-size: 20px;">University Name</h4>
-                    <span class="text-white-50 small" id="modalUniLocation"><i class="fas fa-map-marker-alt mr-1"></i> Location</span>
-                </div>
-                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="opacity: 0.9; font-size: 28px;">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body p-4" style="max-height: 70vh; overflow-y: auto;">
-                <h6 class="font-weight-bold text-dark mb-3" style="font-size: 15px;">Available Programs &amp; Details</h6>
-                <div id="modalCoursesList">
-                    <!-- Populated dynamically -->
-                </div>
-            </div>
-            <div class="modal-footer bg-light" style="border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+    if (courseFilter === "Medicine") {
+        headingEl.textContent = "Medicine & Health Sciences in Singapore";
+    } else if (courseFilter === "Computer Science") {
+        headingEl.textContent = "Computer Science & AI in Singapore";
+    } else if (courseFilter === "Business") {
+        headingEl.textContent = "Business & MBA Programs in Singapore";
+    } else if (courseFilter === "ALL") {
+        headingEl.textContent = "Study in Singapore - Top Universities & Programs";
+    } else {
+        headingEl.textContent = `${courseFilter} in Singapore`;
+    }
 
-<!-- QUICK APPLY MODAL -->
-<div class="modal fade" id="quickApplyModal" tabindex="-1" role="dialog" aria-labelledby="quickApplyTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content" style="border-radius: 12px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-            <div class="modal-header bg-darkblue text-white" style="border-top-left-radius: 12px; border-top-right-radius: 12px; padding: 18px 24px;">
-                <h5 class="modal-title font-weight-bold text-white m-0" id="quickApplyTitle"><i class="fas fa-paper-plane mr-2 text-primary" style="color: #007bff;"></i> Apply Now</h5>
-                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body p-4">
-                <p class="text-muted small mb-3">Fill out your details to receive expert guidance, admission assessment, and application support.</p>
-                <form id="quickModalForm">
-                    <div class="form-group mb-3">
-                        <label class="font-weight-bold small text-dark">Selected University</label>
-                        <input type="text" id="quickApplyUni" class="form-control" readonly style="background: #f1f5f9; font-weight: 600;">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="font-weight-bold small text-dark">Selected Course / Subject</label>
-                        <input type="text" id="quickApplyCourse" class="form-control" readonly style="background: #f1f5f9; font-weight: 600;">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="font-weight-bold small text-dark">Full Name *</label>
-                        <input type="text" id="quickModalName" class="form-control" required placeholder="Enter your full name">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6 mb-3">
-                            <label class="font-weight-bold small text-dark">Email Address *</label>
-                            <input type="email" id="quickModalEmail" class="form-control" required placeholder="name@example.com">
+    let cardsHtml = "";
+    let matchCount = 0;
+
+    Object.keys(singaporeUniversitiesData).forEach(uniName => {
+        if (uniFilter !== "ALL" && uniFilter !== uniName) {
+            return;
+        }
+
+        const uni = singaporeUniversitiesData[uniName];
+
+        let matchingCourses = uni.courses;
+        if (courseFilter !== "ALL") {
+            matchingCourses = uni.courses.filter(c => {
+                if (courseFilter === "Medicine") {
+                    return c.name.toLowerCase().includes("medicine") || c.name.toLowerCase().includes("doctor") || c.name.toLowerCase().includes("mbbs") || c.name.toLowerCase().includes("biomedic") || c.name.toLowerCase().includes("health") || c.name.toLowerCase().includes("dental") || c.name.toLowerCase().includes("pharm") || c.name.toLowerCase().includes("licentiate");
+                } else if (courseFilter === "Computer Science") {
+                    return c.name.toLowerCase().includes("computer") || c.name.toLowerCase().includes("intelligence") || c.name.toLowerCase().includes("data") || c.name.toLowerCase().includes("software") || c.name.toLowerCase().includes("engineering") || c.name.toLowerCase().includes("robotics") || c.name.toLowerCase().includes("machine") || c.name.toLowerCase().includes("cyber");
+                } else if (courseFilter === "Business") {
+                    return c.name.toLowerCase().includes("management") || c.name.toLowerCase().includes("business") || c.name.toLowerCase().includes("mba") || c.name.toLowerCase().includes("finance") || c.name.toLowerCase().includes("economics") || c.name.toLowerCase().includes("innovation") || c.name.toLowerCase().includes("mim");
+                }
+                return true;
+            });
+        }
+
+        if (matchingCourses.length === 0) return;
+
+        const course = matchingCourses[0];
+        matchCount++;
+
+        cardsHtml += `
+            <div class="col-lg-4 col-md-6 mb-30">
+                <div class="uni-card-exact">
+                    <div>
+                        <div class="uni-card-logo-container">
+                            <img src="${uni.logo}" alt="${uniName}" style="max-height: 90px; width: auto; object-fit: contain;">
                         </div>
-                        <div class="form-group col-md-6 mb-3">
-                            <label class="font-weight-bold small text-dark">Phone Number *</label>
-                            <input type="tel" id="quickModalPhone" class="form-control" required placeholder="+91 98765 43210">
+                        <h3 class="uni-name-exact">${uniName}</h3>
+                        <p class="uni-location-exact">${uni.location}</p>
+                        <div class="uni-stars-exact">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <div class="uni-divider-exact"></div>
+                        <h4 class="course-name-exact">${course.name}</h4>
+                        <div class="course-meta-exact">
+                            <div><strong>Course Level:</strong> ${course.level || "Bachelor's / Master's"}</div>
+                            <div><strong>Course Duration:</strong> ${course.duration}</div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block font-weight-bold py-2 mt-2" style="background: #007bff; border: none; border-radius: 6px;">Submit Application</button>
-                    <div id="quickModalAlert" class="alert alert-success mt-3 d-none small">Application submitted successfully! Our counselor will contact you shortly.</div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- CALL BACK MODAL -->
-<div class="modal fade" id="callBackModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-        <div class="modal-content" style="border-radius: 12px; border: none;">
-            <div class="modal-header bg-darkblue text-white py-3">
-                <h5 class="modal-title font-weight-bold text-white m-0" style="font-size: 16px;"><i class="fas fa-headset mr-2 text-primary" style="color: #007bff;"></i> Request Call Back</h5>
-                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body p-3">
-                <form id="callBackForm">
-                    <div class="form-group mb-2">
-                        <input type="text" class="form-control form-control-sm" placeholder="Your Name" required>
+                    <div>
+                        <div class="card-buttons-exact">
+                            <button type="button" class="btn-exact-view" onclick="openUniModal('${uniName}')">
+                                <i class="fas fa-eye"></i> View courses
+                            </button>
+                            <button type="button" class="btn-exact-apply" onclick="openApplyNow('${uniName}', '${course.name}')">
+                                Apply Now
+                            </button>
+                        </div>
+                        <div class="tag-badge-exact">${course.category || "General"}</div>
                     </div>
-                    <div class="form-group mb-3">
-                        <input type="tel" class="form-control form-control-sm" placeholder="Your Phone Number" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-sm btn-block" style="background: #007bff; border: none;">Request Immediate Call</button>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
+        `;
+    });
 
-<!-- FLOATING SIDE ACTION BUTTONS -->
-<div class="floating-side-actions">
-    <a href="javascript:void(0)" id="floatingApplyBtn" class="floating-action-btn" title="Apply Now">
-        <i class="far fa-file-alt"></i>
-        <span>Apply Now</span>
-    </a>
-    <a href="javascript:void(0)" id="floatingCallBackBtn" class="floating-action-btn" title="Call Back">
-        <i class="fas fa-headset"></i>
-        <span>Call Back</span>
-    </a>
-</div>
+    if (matchCount === 0) {
+        cardsHtml = `
+            <div class="col-12 text-center py-5">
+                <p class="text-muted" style="font-size: 16px;">No universities found matching the selected course and university combination.</p>
+                <button class="btn btn-outline-primary btn-sm" onclick="resetFilters()">Reset Filters</button>
+            </div>
+        `;
+    }
+
+    gridEl.innerHTML = cardsHtml;
+}
+
+function resetFilters() {
+    document.getElementById("filterCourseSelect").value = "ALL";
+    document.getElementById("filterUniSelect").value = "ALL";
+    renderCards();
+}
+
+function openCustomModal(modalId) {
+    const el = document.getElementById(modalId);
+    if (el) {
+        el.classList.add("is-open");
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closeCustomModal(modalId) {
+    const el = document.getElementById(modalId);
+    if (el) {
+        el.classList.remove("is-open");
+        document.body.style.overflow = "";
+    }
+}
+
+function handleOverlayClick(e, modalId) {
+    if (e.target && e.target.id === modalId) {
+        closeCustomModal(modalId);
+    }
+}
+
+function openUniModal(uniName) {
+    const uni = singaporeUniversitiesData[uniName];
+    if (!uni) return;
+
+    document.getElementById("modalUniName").textContent = uniName;
+    document.getElementById("modalUniLocation").innerHTML = `<i class="fas fa-map-marker-alt mr-1"></i> ${uni.location}`;
+
+    let html = "";
+    uni.courses.forEach(c => {
+        html += `
+            <div class="modal-course-item">
+                <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap" style="gap: 10px;">
+                    <div>
+                        <h5 class="m-0 font-weight-bold" style="font-size: 16.5px; color: #0b1f3a;">${c.name}</h5>
+                        <span class="badge badge-secondary px-2 py-1 mt-1" style="font-size: 11px; background: #e2e8f0; color: #334155;">${c.category}</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary px-3 font-weight-bold" onclick="openApplyFromModal('${uniName}', '${c.name}')" style="background: #007bff; border: none; border-radius: 6px; padding: 6px 14px;">Apply for Course</button>
+                </div>
+                <div class="course-specs mt-2">
+                    <div><strong><i class="far fa-clock mr-1 text-primary"></i> Duration:</strong> ${c.duration} (${c.level})</div>
+                    <div><strong><i class="far fa-calendar-alt mr-1 text-primary"></i> Intakes:</strong> ${c.intake}</div>
+                    <div><strong><i class="fas fa-coins mr-1 text-primary"></i> Tuition Fee:</strong> ${c.fees}</div>
+                </div>
+                ${c.eligibility ? `<div class="eligibility-text"><strong><i class="fas fa-graduation-cap text-primary mr-1"></i> Admission &amp; Eligibility:</strong> ${c.eligibility}</div>` : ""}
+            </div>
+        `;
+    });
+
+    document.getElementById("modalCoursesList").innerHTML = html;
+    openCustomModal("viewCoursesModal");
+}
+
+function openApplyFromModal(uniName, courseName) {
+    closeCustomModal("viewCoursesModal");
+    setTimeout(() => openApplyNow(uniName, courseName), 150);
+}
+
+function openApplyNow(uniName, courseName) {
+    document.getElementById("quickApplyUni").value = uniName || "Singapore Universities";
+    document.getElementById("quickApplyCourse").value = courseName || "Undergraduate / Postgraduate Program";
+    openCustomModal("quickApplyModal");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const courseSelectEl = document.getElementById("filterCourseSelect");
+    const uniSelectEl = document.getElementById("filterUniSelect");
+
+    if (courseSelectEl) {
+        courseSelectEl.addEventListener("change", renderCards);
+    }
+    if (uniSelectEl) {
+        uniSelectEl.addEventListener("change", renderCards);
+    }
+
+    renderCards();
+
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            closeCustomModal("viewCoursesModal");
+            closeCustomModal("quickApplyModal");
+        }
+    });
+
+    const quickModalFormEl = document.getElementById("quickModalForm");
+    const quickModalAlertEl = document.getElementById("quickModalAlert");
+
+    if (quickModalFormEl) {
+        quickModalFormEl.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const name = document.getElementById("quickModalName").value.trim();
+            const email = document.getElementById("quickModalEmail").value.trim();
+            const phone = document.getElementById("quickModalPhone").value.trim();
+            const uni = document.getElementById("quickApplyUni").value;
+            const course = document.getElementById("quickApplyCourse").value;
+
+            const enquiryData = {
+                timestamp: new Date().toLocaleString(),
+                name: name,
+                email: email,
+                phone: phone,
+                country: "Singapore",
+                message: `Quick Application for ${course} at ${uni}`
+            };
+
+            let existing = JSON.parse(localStorage.getItem("eduvista_enquiries") || "[]");
+            existing.push(enquiryData);
+            localStorage.setItem("eduvista_enquiries", JSON.stringify(existing));
+
+            if (quickModalAlertEl) quickModalAlertEl.classList.remove("d-none");
+
+            setTimeout(function() {
+                if (quickModalAlertEl) quickModalAlertEl.classList.add("d-none");
+                closeCustomModal("quickApplyModal");
+                quickModalFormEl.reset();
+            }, 1800);
+        });
+    }
+});
+</script>
 
 </body>
 </html>
