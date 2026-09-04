@@ -2050,7 +2050,7 @@ span.id-color {
 }
 
 #header-2.header {
-    height: 115px;
+    height: 145px;
 }
 
 .header-wrapper {
@@ -6633,7 +6633,7 @@ p.foo-email a {
   =========================================================================== */
 
 #breadcrumb {
-    margin-top: 45px;
+    margin-top: 0px;
 }
 
 .breadcrumb {

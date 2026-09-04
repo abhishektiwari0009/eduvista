@@ -44,24 +44,120 @@
 
 
 		/*----------------------------------------------------*/
-		/*	Hero Slider
+		/*	Bespoke Ultra-Smooth Hero Slider Controller
 		/*----------------------------------------------------*/
 
-		$('.slider').slider({
-			full_width: false,
-			interval:6000,
-			transition:1000,
-			draggable: false,
-			indicators: false,
-		});
+		var $heroSlider = $('#hero-2 .slider');
+		if ($heroSlider.length) {
+			var $slides = $heroSlider.find('.slides > li');
+			var totalSlides = $slides.length;
 
-		$('.slide-next').click(function() {
-			$('.slider').slider('next');
-		});
+			if (totalSlides > 0) {
+				var currentIndex = 0;
+				var autoplayTimer = null;
+				var intervalMs = 3500;
+				var isTransitioning = false;
 
-		$('.slide-prev').click(function() {
-			$('.slider').slider('prev');
-		});
+				// Create elegant navigation dots
+				var $dotsContainer = $('<ul class="hero-slider-dots"></ul>');
+				for (var i = 0; i < totalSlides; i++) {
+					$dotsContainer.append('<li data-index="' + i + '" class="' + (i === 0 ? 'active' : '') + '"></li>');
+				}
+				$('#hero-2').append($dotsContainer);
+				var $dots = $dotsContainer.find('li');
+
+				function goToSlide(index) {
+					if (isTransitioning) return;
+					if (index < 0) index = totalSlides - 1;
+					if (index >= totalSlides) index = 0;
+
+					isTransitioning = true;
+					$slides.removeClass('active');
+					$dots.removeClass('active');
+
+					$slides.eq(index).addClass('active');
+					$dots.eq(index).addClass('active');
+					currentIndex = index;
+
+					setTimeout(function() {
+						isTransitioning = false;
+					}, 500);
+				}
+
+				function nextSlide() {
+					goToSlide((currentIndex + 1) % totalSlides);
+				}
+
+				function prevSlide() {
+					goToSlide((currentIndex - 1 + totalSlides) % totalSlides);
+				}
+
+				function startAutoplay() {
+					stopAutoplay();
+					autoplayTimer = setInterval(nextSlide, intervalMs);
+				}
+
+				function stopAutoplay() {
+					if (autoplayTimer) {
+						clearInterval(autoplayTimer);
+						autoplayTimer = null;
+					}
+				}
+
+				function restartAutoplay() {
+					startAutoplay();
+				}
+
+				// Arrow buttons
+				$('.slide-next, .hero-slider-nav a.slide-next').on('click', function(e) {
+					e.preventDefault();
+					nextSlide();
+					restartAutoplay();
+				});
+
+				$('.slide-prev, .hero-slider-nav a.slide-prev').on('click', function(e) {
+					e.preventDefault();
+					prevSlide();
+					restartAutoplay();
+				});
+
+				// Dot indicators
+				$dots.on('click', function() {
+					var idx = parseInt($(this).attr('data-index'), 10);
+					goToSlide(idx);
+					restartAutoplay();
+				});
+
+				// Touch swipe support
+				var touchStartX = 0;
+				var touchEndX = 0;
+				$('#hero-2').on('touchstart', function(e) {
+					touchStartX = e.originalEvent.touches[0].clientX;
+				});
+				$('#hero-2').on('touchend', function(e) {
+					touchEndX = e.originalEvent.changedTouches[0].clientX;
+					if (touchStartX - touchEndX > 40) {
+						nextSlide();
+						restartAutoplay();
+					} else if (touchEndX - touchStartX > 40) {
+						prevSlide();
+						restartAutoplay();
+					}
+				});
+
+				// Initialize & Start automatic slideshow immediately
+				goToSlide(0);
+				startAutoplay();
+
+				// Ensure autoplay keeps running across tabs/windows
+				$(window).on('focus', startAutoplay);
+				document.addEventListener('visibilitychange', function() {
+					if (!document.hidden) {
+						startAutoplay();
+					}
+				});
+			}
+		}
 
 
 		/*----------------------------------------------------*/
@@ -363,7 +459,7 @@
 				$(this).prop('Counter',0).animate({
 					Counter: $(this).text()
 				}, {
-					duration: 4000,
+					duration: 1800,
 					easing: 'swing',
 					step: function (now) {
 						$(this).text(Math.ceil(now));
@@ -383,9 +479,9 @@
 				loop:true,
 				autoplay:true,
 				navBy: 1,
-				autoplayTimeout: 4000,
+				autoplayTimeout: 3500,
 				autoplayHoverPause: false,
-				smartSpeed: 2000,
+				smartSpeed: 600,
 				responsive:{
 					0:{
 						items:2
@@ -423,7 +519,7 @@
 				dots: false,
 				autoplayTimeout: 4500,
 				autoplayHoverPause: true,
-				smartSpeed: 1500,
+				smartSpeed: 600,
 				responsive:{
 					0:{
 						items:1
