@@ -14,8 +14,13 @@
 			loader.fadeOut();
 			preloader.delay(400).fadeOut('slow');
 				
-		$(window).stellar({});
-		
+		try {
+			if ($.fn.stellar) {
+				$(window).stellar({});
+			}
+		} catch(err) {
+			console.warn('Stellar parallax initialization skipped:', err);
+		}
 	});
 
 
@@ -712,17 +717,7 @@
 			5: 'This email address looks fake or invalid. Please enter a real email address'
 		};	
 
-		/*----------------------------------------------------*/
-		/*	Custom Navigation Dropdown for Mobile
-		/*----------------------------------------------------*/
-		$('.wsmenu-dropdown > a').on('click', function(e) {
-			if ($(window).width() < 992) {
-				e.preventDefault();
-				$(this).parent().toggleClass('active');
-				$(this).siblings('.wsmenu-dropdown-menu').slideToggle('fast');
-			}
-		});
-
 	});
+
 
 
