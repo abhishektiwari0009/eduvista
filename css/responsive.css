@@ -274,7 +274,8 @@
 
   #hero-2 .slider,
   #hero-2 .slider .slides {
-    height: 580px;
+    height: auto !important;
+    aspect-ratio: 1600 / 600 !important;
   }
 
   #hero-8 .slider,
@@ -1298,7 +1299,8 @@
 
   #hero-2 .slider,
   #hero-2 .slider .slides {
-    height: 550px;
+    height: auto !important;
+    aspect-ratio: 1600 / 600 !important;
   }
 
   #hero-8 .slider,
@@ -2828,7 +2830,8 @@
 
   #hero-2 .slider,
   #hero-2 .slider .slides {
-    height: 560px;
+    height: auto !important;
+    aspect-ratio: 1600 / 600 !important;
   }
 
   #hero-8 .slider,
@@ -3071,7 +3074,7 @@
   }
 
   #about-3 {
-    margin-top: -200px;
+    margin-top: 15px;
   }
 
   .abox-3-holder {
@@ -4028,7 +4031,8 @@
 
   #hero-2 .slider,
   #hero-2 .slider .slides {
-    height: 600px;
+    height: auto !important;
+    aspect-ratio: 1600 / 600 !important;
   }
 
   #hero-8 .slider,
@@ -4260,7 +4264,7 @@
   }
 
   #about-3 {
-    margin-top: -285px;
+    margin-top: 15px;
   }
 
   .abox-3-holder {
@@ -5294,7 +5298,8 @@
 
   #hero-2 .slider,
   #hero-2 .slider .slides {
-    height: 600px;
+    height: auto !important;
+    aspect-ratio: 1600 / 600 !important;
   }
 
   #hero-8 .slider,
@@ -5526,7 +5531,7 @@
   }
 
   #about-3 {
-    margin-top: -285px;
+    margin-top: 15px;
   }
 
   .abox-3-holder {
@@ -6252,11 +6257,8 @@
   /* Navigation Drawer for Direct A Tags */
   .wsmenu {
     flex-direction: column !important;
-    align-items: flex-start !important;
-    height: auto !important;
+    align-items: stretch !important;
     gap: 0 !important;
-    padding: 15px 0 !important;
-    width: 100% !important;
     background: #ffffff !important;
   }
 
@@ -6435,7 +6437,7 @@ html, body {
 #hero-2 .slider {
   position: relative !important;
   width: 100% !important;
-  aspect-ratio: 1024 / 500 !important;
+  aspect-ratio: 1600 / 600 !important;
   max-height: 680px !important;
   min-height: 160px !important;
   overflow: hidden !important;
@@ -6480,7 +6482,7 @@ html, body {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: center center !important;
+  object-position: center top !important;
   transform: scale(1) !important;
   transition: transform 6s cubic-bezier(0.25, 1, 0.5, 1) !important;
   display: block !important;
@@ -6582,7 +6584,7 @@ html, body {
     padding-top: 0 !important;
   }
   #hero-2 .slider {
-    aspect-ratio: 1024 / 500 !important;
+    aspect-ratio: 1600 / 600 !important;
   }
   .hero-slider-dots {
     bottom: 14px !important;
@@ -6671,15 +6673,15 @@ html, body {
     width: 100% !important;
   }
   #hero-2 .slider {
-    aspect-ratio: 1024 / 500 !important;
-    min-height: 150px !important;
+    aspect-ratio: 1600 / 600 !important;
+    min-height: 140px !important;
     width: 100% !important;
   }
   #hero-2 .slider .slides li img {
     height: 100% !important;
     width: 100% !important;
     object-fit: cover !important;
-    object-position: center center !important;
+    object-position: center top !important;
     display: block !important;
   }
   .hero-slider-dots {
@@ -6731,3 +6733,143 @@ html, body {
     font-size: 14px !important;
   }
 }
+
+/* ==========================================================================
+   HERO SLIDER & RESPONSIVE IMAGE FIT OVERRIDES
+   Ensures sliding images (including australia.jpeg) show completely and cleanly
+   without any part being cropped, hidden, or overlapped on all screen sizes.
+   ========================================================================== */
+
+#hero-2.hero-section {
+  position: relative !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background-color: #0b1f3a !important;
+  overflow: hidden !important;
+}
+
+#hero-2 .slider {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 1600 / 600 !important;
+  height: auto !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#hero-2 .slider .slides {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+#hero-2 .slider .slides li {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: 1 !important;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#hero-2 .slider .slides li.active,
+#hero-2 .slider .slides li:first-child {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
+}
+
+#hero-2 .slider .slides li img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+}
+
+/* Dots navigation styling */
+.hero-slider-dots {
+  position: absolute !important;
+  bottom: 12px !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  z-index: 10 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* Desktop layout (>= 992px) */
+@media (min-width: 992px) {
+  #hero-2.hero-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #hero-2 .slider,
+  #hero-2 .slider .slides,
+  #hero-2 .slider .slides li {
+    max-height: 580px !important;
+  }
+  #about-3 {
+    margin-top: -60px !important;
+    position: relative !important;
+    z-index: 99 !important;
+  }
+}
+
+/* Tablet layout (768px - 991.95px) */
+@media (min-width: 768px) and (max-width: 991.95px) {
+  #hero-2.hero-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #hero-2 .slider,
+  #hero-2 .slider .slides,
+  #hero-2 .slider .slides li {
+    max-height: 450px !important;
+  }
+  #about-3 {
+    margin-top: -30px !important;
+    position: relative !important;
+    z-index: 99 !important;
+  }
+}
+
+/* Mobile layout (< 768px) */
+@media (max-width: 767.95px) {
+  #hero-2.hero-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  #hero-2 .slider,
+  #hero-2 .slider .slides,
+  #hero-2 .slider .slides li {
+    min-height: 140px !important;
+    max-height: 380px !important;
+  }
+  #about-3 {
+    margin-top: 15px !important;
+    position: relative !important;
+    z-index: 99 !important;
+  }
+  .hero-slider-dots {
+    bottom: 6px !important;
+    gap: 5px !important;
+  }
+}
+

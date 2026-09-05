@@ -61,13 +61,109 @@
   <!-- RESPONSIVE CSS -->
   <link href="css/responsive.css" rel="stylesheet">
 
-  <style type="text/css" id="mytempCss">
-    ._8mqQwQ {
-      display: none;
+  <style type="text/css" id="heroResponsiveFix">
+    /* Hero Section Responsive & Slider Animation Fixes */
+    #hero-2.hero-section {
+      position: relative !important;
+      width: 100% !important;
+      background-color: #0b1f3a !important;
+      overflow: hidden !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
-
-    ._1TWLMK.icF5zO {
-      opacity: 0.01;
+    #hero-2 .slider {
+      position: relative !important;
+      width: 100% !important;
+      aspect-ratio: 1600 / 600 !important;
+      height: auto !important;
+      overflow: hidden !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    #hero-2 .slider .slides {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+    }
+    #hero-2 .slider .slides li {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      z-index: 1 !important;
+      transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    #hero-2 .slider .slides li.active {
+      opacity: 1 !important;
+      visibility: visible !important;
+      z-index: 2 !important;
+    }
+    #hero-2 .slider .slides li img {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      display: block !important;
+    }
+    .hero-slider-dots {
+      position: absolute !important;
+      bottom: 12px !important;
+      left: 0 !important;
+      right: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      z-index: 10 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+    }
+    @media (min-width: 992px) {
+      #hero-2.hero-section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+      #about-3 {
+        margin-top: -60px !important;
+        position: relative !important;
+        z-index: 99 !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991.95px) {
+      #hero-2.hero-section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+      #about-3 {
+        margin-top: -30px !important;
+        position: relative !important;
+        z-index: 99 !important;
+      }
+    }
+    @media (max-width: 767.95px) {
+      #hero-2.hero-section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+      #about-3 {
+        margin-top: 15px !important;
+        position: relative !important;
+        z-index: 99 !important;
+      }
+      .hero-slider-dots {
+        bottom: 6px !important;
+        gap: 5px !important;
+      }
     }
   </style>
 </head>
@@ -202,17 +298,17 @@
 
             <!-- SLIDE #1: Australia -->
             <li id="slide-1" class="active">
-              <img src="images/slider/slide-1.jpg" alt="Study in Australia - Travel &amp; Tourism, Engineering, Business, Health, Science, IT and more">
+              <img src="images/slider/australia.jpeg" alt="Study in Australia - Travel &amp; Tourism, Engineering, Business, Health, Science, IT and more">
             </li>
 
             <!-- SLIDE #2: United Kingdom -->
             <li id="slide-2">
-              <img src="images/slider/slide-2.jpg" alt="Study in UK - Travel &amp; Tourism, Engineering, Business, Health, Science, IT and more">
+              <img src="images/slider/uk.jpeg" alt="Study in UK - Travel &amp; Tourism, Engineering, Business, Health, Science, IT and more">
             </li>
 
             <!-- SLIDE #3: USA (Campus Life) -->
             <li id="slide-3">
-              <img src="images/slider/slide-3.jpg" alt="Study in USA - Top Universities, Campus Community, Engineering, Business, Science, IT">
+              <img src="images/slider/usa.jpeg" alt="Study in USA - Top Universities, Campus Community, Engineering, Business, Science, IT">
             </li>
 
             <!-- SLIDE #4: USA (Skyline) -->
@@ -222,22 +318,22 @@
 
             <!-- SLIDE #5: Canada -->
             <li id="slide-5">
-              <img src="images/slider/slide-5.jpg" alt="Study in Canada - Top Universities, Affordable Tuition, Diverse Culture, Work &amp; Settle Opportunities">
+              <img src="images/slider/canada.jpeg" alt="Study in Canada - Top Universities, Affordable Tuition, Diverse Culture, Work &amp; Settle Opportunities">
             </li>
 
             <!-- SLIDE #6: Europe -->
             <li id="slide-6">
-              <img src="images/slider/slide-6.jpg" alt="Study in Europe - Germany, Italy, Cyprus, Finland, Sweden, Portugal, Hungary, France, Norway">
+              <img src="images/slider/europe.jpeg" alt="Study in Europe - Germany, Italy, Cyprus, Finland, Sweden, Portugal, Hungary, France, Norway">
             </li>
 
             <!-- SLIDE #7: Asia -->
             <li id="slide-7">
-              <img src="images/slider/slide-7.jpg" alt="Study in Asia - Malaysia, China, Japan, Bangladesh, Singapore, South Korea">
+              <img src="images/slider/asia.jpeg" alt="Study in Asia - Malaysia, China, Japan, Bangladesh, Singapore, South Korea">
             </li>
 
             <!-- SLIDE #8: Scholarship Assistance -->
             <li id="slide-8">
-              <img src="images/slider/slide-8.jpg" alt="Scholarship Assistance - Undergraduate, Postgraduate, Doctoral &amp; Research Programs Guidance">
+              <img src="images/slider/scholarship.jpeg" alt="Scholarship Assistance - Undergraduate, Postgraduate, Doctoral &amp; Research Programs Guidance">
             </li>
 
           </ul>
@@ -2149,31 +2245,6 @@
       <section id="tabs-2" class="wide-60 tabs-section division">
         <div class="container">
           <div class="row">
-
-
-            <!-- TABS NAVIGATION -->
-            <div class="col-md-12">
-              <div class="tabs-nav clearfix">
-                <ul class="tabs-2 primary-tabs">
-
-                  <!-- TAB-1 LINK -->
-                  <li class="tab-link displayed" data-tab="tab-11">
-                    <span>Goverment Approved</span>
-                  </li>
-
-                  <!-- TAB-2 LINK -->
-                  <li class="tab-link" data-tab="tab-12">
-                    <span>No Hidden Costs</span>
-                  </li>
-
-                  <!-- TAB-3 LINK -->
-                  <li class="tab-link" data-tab="tab-13">
-                    <span>Fast, Easy &amp; Secure</span>
-                  </li>
-
-                </ul>
-              </div>
-            </div> <!-- END TABS NAVIGATION -->
 
 
             <!-- TABS CONTENT -->

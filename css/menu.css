@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Plugin: Web Slide Navigation System
  * EduVista - Modern Responsive Navigation & Desktop Dropdowns
 */
@@ -56,7 +56,7 @@ video {
 .wsmainfull {
   width: 100%;
   height: auto;
-  background-color: #fff !important;
+  background-color: #fff;
   z-index: 999;
   box-shadow: 0 2px 3px rgba(96, 96, 96, .1);
   transition: all 450ms ease-in-out;
@@ -84,11 +84,11 @@ video {
 
 .desktoplogo img {
   vertical-align: middle;
-  max-height: 85px !important;
+  max-height: 85px;
 }
 
 .smllogo img {
-  max-height: 65px !important;
+  max-height: 65px;
 }
 
 /* ==========================================================================
@@ -100,7 +100,7 @@ video {
   display: flex;
   align-items: center;
   gap: 18px;
-  height: 70px !important;
+  height: 70px;
   margin-left: auto;
 }
 
@@ -123,7 +123,7 @@ video {
 
 .wsmenu > a:hover,
 .wsmenu > a.active {
-  color: #ff4500 !important;
+  color: #ff4500;
 }
 
 .wsmenu > a::after {
@@ -201,7 +201,7 @@ video {
 }
 
 .wsmenu-dropdown > a:hover {
-  color: #ff4500 !important;
+  color: #ff4500;
 }
 
 .wsmenu-dropdown > a::after {
@@ -304,6 +304,10 @@ video {
   display: none;
 }
 
+.wsmenu-close-bar {
+  display: none !important;
+}
+
 /* ==============================================================================
    RESPONSIVE MOBILE & TABLET NAVIGATION DRAWER (max-width: 991.95px)
    ============================================================================== */
@@ -335,7 +339,7 @@ video {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    position: relative !important;
+    position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
@@ -343,7 +347,7 @@ video {
     background: #ffffff !important;
     padding: 0 16px !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
-    z-index: 9999 !important;
+    z-index: 100005 !important;
   }
 
   .wsmobileheader .smllogo img {
@@ -419,13 +423,13 @@ video {
 
   .wsmenu {
     position: fixed !important;
-    top: 0 !important;
+    top: 65px !important;
     left: -320px !important;
     width: 290px !important;
     max-width: 85vw !important;
-    height: 100vh !important;
+    height: calc(100vh - 65px) !important;
     background: #ffffff !important;
-    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.15) !important;
     z-index: 100000 !important;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
@@ -433,7 +437,7 @@ video {
     flex-direction: column !important;
     align-items: stretch !important;
     gap: 0 !important;
-    padding: 30px 0 50px 0 !important;
+    padding: 15px 0 50px 0 !important;
     margin: 0 !important;
     visibility: visible !important;
     transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -443,28 +447,62 @@ video {
     left: 0 !important;
   }
 
-  /* Dark Backdrop Overlay */
-  .overlapblackbg {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    background: rgba(11, 31, 58, 0.65) !important;
-    backdrop-filter: blur(3px) !important;
-    z-index: 99998 !important;
-    display: none !important;
-    opacity: 0 !important;
-    transition: opacity 0.3s ease !important;
+  /* Mobile Drawer Close Bar */
+  .wsmenu-close-bar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 18px !important;
+    background: #f8fafc !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    position: relative !important;
+    z-index: 100005 !important;
+    pointer-events: auto !important;
+    height: auto !important;
+    line-height: 1.4 !important;
   }
+
+  .wsmenu-close-title {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+    color: #64748b !important;
+  }
+
+  .wsmenu-close-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #ff4500 !important;
+    background: #fff0eb !important;
+    padding: 5px 12px !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .wsmenu-close-btn:hover,
+  .wsmenu-close-btn:active {
+    background: #ff4500 !important;
+    color: #ffffff !important;
+  }
+
+
 
   body.wsactive .overlapblackbg {
     display: block !important;
     opacity: 1 !important;
   }
 
-  /* Mobile Drawer Links */
+  /* Mobile Drawer Links - direct nav items */
   .wsmenu > a {
+    position: relative !important;
+    z-index: 100005 !important;
+    pointer-events: auto !important;
     display: block !important;
     padding: 14px 22px !important;
     font-size: 15px !important;
@@ -475,6 +513,9 @@ video {
     line-height: 1.4 !important;
     text-decoration: none !important;
     background: #ffffff !important;
+    width: 100% !important;
+    text-align: left !important;
+    white-space: normal !important;
   }
 
   .wsmenu > a:hover,
@@ -495,14 +536,19 @@ video {
     display: block !important;
     color: #ffffff !important;
     background-color: #ff4500 !important;
+    width: auto !important;
   }
 
   /* Mobile Countries Dropdown Accordion */
   .wsmenu-dropdown {
+    position: relative !important;
+    z-index: 100005 !important;
+    pointer-events: auto !important;
     width: 100% !important;
     height: auto !important;
     display: block !important;
     border-bottom: 1px solid #f1f5f9 !important;
+    background: #ffffff !important;
   }
 
   .wsmenu-dropdown > a {
@@ -517,6 +563,9 @@ video {
     line-height: 1.4 !important;
     cursor: pointer !important;
     background: #ffffff !important;
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 100005 !important;
   }
 
   .wsmenu-dropdown > a::after {
@@ -532,13 +581,13 @@ video {
     background: #f8fafc !important;
     max-height: none !important;
     padding: 4px 0 !important;
-    display: none !important;
+    display: none;
     opacity: 1 !important;
     visibility: visible !important;
   }
 
   .wsmenu-dropdown.is-open .wsmenu-dropdown-menu {
-    display: block !important;
+    display: block;
   }
 
   .wsmenu-dropdown-menu a {
@@ -550,6 +599,9 @@ video {
     display: block !important;
     background: transparent !important;
     line-height: 1.4 !important;
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 100005 !important;
   }
 
   .wsmenu-dropdown-menu a:hover {
